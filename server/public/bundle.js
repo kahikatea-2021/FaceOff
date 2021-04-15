@@ -10,7 +10,7 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => /* binding */ _extends
+/* harmony export */   "default": () => (/* binding */ _extends)
 /* harmony export */ });
 function _extends() {
   _extends = Object.assign || function (target) {
@@ -41,12 +41,14 @@ function _extends() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => /* binding */ _inheritsLoose
+/* harmony export */   "default": () => (/* binding */ _inheritsLoose)
 /* harmony export */ });
+/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
   subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
+  (0,_setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__.default)(subClass, superClass);
 }
 
 /***/ }),
@@ -60,7 +62,7 @@ function _inheritsLoose(subClass, superClass) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => /* binding */ _objectWithoutPropertiesLoose
+/* harmony export */   "default": () => (/* binding */ _objectWithoutPropertiesLoose)
 /* harmony export */ });
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
@@ -79,6 +81,28 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _setPrototypeOf)
+/* harmony export */ });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
 /***/ "./client/components/App.jsx":
 /*!***********************************!*\
   !*** ./client/components/App.jsx ***!
@@ -88,3527 +112,12 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./client/components/Nav.jsx");
-/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home */ "./client/components/Home.jsx");
-/* harmony import */ var _Continent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Continent */ "./client/components/Continent.jsx");
-/* harmony import */ var _Country__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Country */ "./client/components/Country.jsx");
 
-
-
-
-
-
-
-function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/color_earth.gif"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Navigating the worldwide routes")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-    path: "/",
-    component: _Nav__WEBPACK_IMPORTED_MODULE_1__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-    exact: true,
-    path: "/",
-    component: _Home__WEBPACK_IMPORTED_MODULE_2__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-    path: "/continent/:name",
-    component: _Continent__WEBPACK_IMPORTED_MODULE_3__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-    path: "/continent/:name/:code",
-    component: _Country__WEBPACK_IMPORTED_MODULE_4__.default
-  })));
-}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
-
-/***/ }),
-
-/***/ "./client/components/Continent.jsx":
-/*!*****************************************!*\
-  !*** ./client/components/Continent.jsx ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _data_continents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/continents */ "./data/continents.js");
-
-
-
-
-function Continents() {
-  var _useParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)(),
-      name = _useParams.name;
-
-  var continent = _data_continents__WEBPACK_IMPORTED_MODULE_1__.default[name];
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/".concat(continent.image),
-    alt: name
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, continent.countries.map(function (country) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-      key: country.code
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      to: "/continent/".concat(name, "/").concat(country.code)
-    }, country.name));
-  })));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Continents);
-
-/***/ }),
-
-/***/ "./client/components/Country.jsx":
-/*!***************************************!*\
-  !*** ./client/components/Country.jsx ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _data_countries__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/countries */ "./data/countries.js");
-
-
-
-
-function Country() {
-  var _useParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)(),
-      code = _useParams.code,
-      name = _useParams.name;
-  /** useParams is taking in parameters set out on the App page in how the route for this specific jsx file works.  If you look on App.jsx you will see the path for country specifies :name and then :code - these are the params that are being passed to the useParams here. */
-
-
-  var country = _data_countries__WEBPACK_IMPORTED_MODULE_1__.default.find(function (country) {
-    return country.code === code;
-  });
-  var neighbourCodes = country.neighbours.split(',');
-  var neighbourName = neighbourCodes.map(function (neighbour) {
-    return _data_countries__WEBPACK_IMPORTED_MODULE_1__.default.find(function (country) {
-      return country.code === neighbour;
-    });
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, country.flag, " ", country.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Capital: ", country.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Area: ", country.areaSqKms, " km squared"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Population: ", country.population), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Currency: ", country.currencyName, " (", country.currencyCode, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Neighbours: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, neighbourName.map(function (neighbour) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-      key: neighbour.code
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      to: "/continent/".concat(name, "/").concat(neighbour.code)
-    }, neighbour.name));
-  })));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Country);
-
-/***/ }),
-
-/***/ "./client/components/Home.jsx":
-/*!************************************!*\
-  !*** ./client/components/Home.jsx ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Please select a continent from the nav list"));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
-
-/***/ }),
-
-/***/ "./client/components/Nav.jsx":
-/*!***********************************!*\
-  !*** ./client/components/Nav.jsx ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _data_continents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/continents */ "./data/continents.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-
-
-
-function Nav() {
-  var continents = Object.keys(_data_continents__WEBPACK_IMPORTED_MODULE_1__.default);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Nav"), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, continents.map(function (continent) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-      key: continent
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-      to: "/continent/".concat(continent)
-    }, continent));
-  })));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
-
-/***/ }),
-
-/***/ "./client/index.js":
-/*!*************************!*\
-  !*** ./client/index.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./client/components/App.jsx");
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.HashRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById("app"));
-});
-
-/***/ }),
-
-/***/ "./data/continents.js":
-/*!****************************!*\
-  !*** ./data/continents.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  Africa: {
-    image: 'South-Africa.jpg',
-    countries: [{
-      code: 'AO',
-      name: 'Angola'
-    }, {
-      code: 'BF',
-      name: 'Burkina Faso'
-    }, {
-      code: 'BI',
-      name: 'Burundi'
-    }, {
-      code: 'BJ',
-      name: 'Benin'
-    }, {
-      code: 'BW',
-      name: 'Botswana'
-    }, {
-      code: 'CD',
-      name: 'Democratic Republic of the Congo'
-    }, {
-      code: 'CF',
-      name: 'Central African Republic'
-    }, {
-      code: 'CG',
-      name: 'Republic of the Congo'
-    }, {
-      code: 'CI',
-      name: 'Ivory Coast'
-    }, {
-      code: 'CM',
-      name: 'Cameroon'
-    }, {
-      code: 'CV',
-      name: 'Cabo Verde'
-    }, {
-      code: 'DJ',
-      name: 'Djibouti'
-    }, {
-      code: 'DZ',
-      name: 'Algeria'
-    }, {
-      code: 'EG',
-      name: 'Egypt'
-    }, {
-      code: 'EH',
-      name: 'Western Sahara'
-    }, {
-      code: 'ER',
-      name: 'Eritrea'
-    }, {
-      code: 'ET',
-      name: 'Ethiopia'
-    }, {
-      code: 'GA',
-      name: 'Gabon'
-    }, {
-      code: 'GH',
-      name: 'Ghana'
-    }, {
-      code: 'GM',
-      name: 'Gambia'
-    }, {
-      code: 'GN',
-      name: 'Guinea'
-    }, {
-      code: 'GQ',
-      name: 'Equatorial Guinea'
-    }, {
-      code: 'GW',
-      name: 'Guinea-Bissau'
-    }, {
-      code: 'KE',
-      name: 'Kenya'
-    }, {
-      code: 'KM',
-      name: 'Comoros'
-    }, {
-      code: 'LR',
-      name: 'Liberia'
-    }, {
-      code: 'LS',
-      name: 'Lesotho'
-    }, {
-      code: 'LY',
-      name: 'Libya'
-    }, {
-      code: 'MA',
-      name: 'Morocco'
-    }, {
-      code: 'MG',
-      name: 'Madagascar'
-    }, {
-      code: 'ML',
-      name: 'Mali'
-    }, {
-      code: 'MR',
-      name: 'Mauritania'
-    }, {
-      code: 'MU',
-      name: 'Mauritius'
-    }, {
-      code: 'MW',
-      name: 'Malawi'
-    }, {
-      code: 'MZ',
-      name: 'Mozambique'
-    }, {
-      code: 'NA',
-      name: 'Namibia'
-    }, {
-      code: 'NE',
-      name: 'Niger'
-    }, {
-      code: 'NG',
-      name: 'Nigeria'
-    }, {
-      code: 'RE',
-      name: 'Reunion'
-    }, {
-      code: 'RW',
-      name: 'Rwanda'
-    }, {
-      code: 'SC',
-      name: 'Seychelles'
-    }, {
-      code: 'SD',
-      name: 'Sudan'
-    }, {
-      code: 'SS',
-      name: 'South Sudan'
-    }, {
-      code: 'SH',
-      name: 'Saint Helena'
-    }, {
-      code: 'SL',
-      name: 'Sierra Leone'
-    }, {
-      code: 'SN',
-      name: 'Senegal'
-    }, {
-      code: 'SO',
-      name: 'Somalia'
-    }, {
-      code: 'ST',
-      name: 'Sao Tome and Principe'
-    }, {
-      code: 'SZ',
-      name: 'Eswatini'
-    }, {
-      code: 'TD',
-      name: 'Chad'
-    }, {
-      code: 'TG',
-      name: 'Togo'
-    }, {
-      code: 'TN',
-      name: 'Tunisia'
-    }, {
-      code: 'TZ',
-      name: 'Tanzania'
-    }, {
-      code: 'UG',
-      name: 'Uganda'
-    }, {
-      code: 'YT',
-      name: 'Mayotte'
-    }, {
-      code: 'ZA',
-      name: 'South Africa'
-    }, {
-      code: 'ZM',
-      name: 'Zambia'
-    }, {
-      code: 'ZW',
-      name: 'Zimbabwe'
-    }]
-  },
-  Antarctica: {
-    image: 'Antarctica.jpg',
-    countries: [{
-      code: 'AQ',
-      name: 'Antarctica'
-    }, {
-      code: 'BV',
-      name: 'Bouvet Island'
-    }, {
-      code: 'GS',
-      name: 'South Georgia and the South Sandwich Islands'
-    }, {
-      code: 'HM',
-      name: 'Heard Island and McDonald Islands'
-    }, {
-      code: 'TF',
-      name: 'French Southern Territories'
-    }]
-  },
-  Asia: {
-    image: 'Mekong-River.jpg',
-    countries: [{
-      code: 'AE',
-      name: 'United Arab Emirates'
-    }, {
-      code: 'AF',
-      name: 'Afghanistan'
-    }, {
-      code: 'AM',
-      name: 'Armenia'
-    }, {
-      code: 'AZ',
-      name: 'Azerbaijan'
-    }, {
-      code: 'BD',
-      name: 'Bangladesh'
-    }, {
-      code: 'BH',
-      name: 'Bahrain'
-    }, {
-      code: 'BN',
-      name: 'Brunei'
-    }, {
-      code: 'BT',
-      name: 'Bhutan'
-    }, {
-      code: 'CC',
-      name: 'Cocos Islands'
-    }, {
-      code: 'CN',
-      name: 'China'
-    }, {
-      code: 'GE',
-      name: 'Georgia'
-    }, {
-      code: 'HK',
-      name: 'Hong Kong'
-    }, {
-      code: 'ID',
-      name: 'Indonesia'
-    }, {
-      code: 'IL',
-      name: 'Israel'
-    }, {
-      code: 'IN',
-      name: 'India'
-    }, {
-      code: 'IO',
-      name: 'British Indian Ocean Territory'
-    }, {
-      code: 'IQ',
-      name: 'Iraq'
-    }, {
-      code: 'IR',
-      name: 'Iran'
-    }, {
-      code: 'JO',
-      name: 'Jordan'
-    }, {
-      code: 'JP',
-      name: 'Japan'
-    }, {
-      code: 'KG',
-      name: 'Kyrgyzstan'
-    }, {
-      code: 'KH',
-      name: 'Cambodia'
-    }, {
-      code: 'KP',
-      name: 'North Korea'
-    }, {
-      code: 'KR',
-      name: 'South Korea'
-    }, {
-      code: 'KW',
-      name: 'Kuwait'
-    }, {
-      code: 'KZ',
-      name: 'Kazakhstan'
-    }, {
-      code: 'LA',
-      name: 'Laos'
-    }, {
-      code: 'LB',
-      name: 'Lebanon'
-    }, {
-      code: 'LK',
-      name: 'Sri Lanka'
-    }, {
-      code: 'MM',
-      name: 'Myanmar'
-    }, {
-      code: 'MN',
-      name: 'Mongolia'
-    }, {
-      code: 'MO',
-      name: 'Macao'
-    }, {
-      code: 'MV',
-      name: 'Maldives'
-    }, {
-      code: 'MY',
-      name: 'Malaysia'
-    }, {
-      code: 'NP',
-      name: 'Nepal'
-    }, {
-      code: 'OM',
-      name: 'Oman'
-    }, {
-      code: 'PH',
-      name: 'Philippines'
-    }, {
-      code: 'PK',
-      name: 'Pakistan'
-    }, {
-      code: 'PS',
-      name: 'Palestinian Territory'
-    }, {
-      code: 'QA',
-      name: 'Qatar'
-    }, {
-      code: 'SA',
-      name: 'Saudi Arabia'
-    }, {
-      code: 'SG',
-      name: 'Singapore'
-    }, {
-      code: 'SY',
-      name: 'Syria'
-    }, {
-      code: 'TH',
-      name: 'Thailand'
-    }, {
-      code: 'TJ',
-      name: 'Tajikistan'
-    }, {
-      code: 'TM',
-      name: 'Turkmenistan'
-    }, {
-      code: 'TR',
-      name: 'Turkey'
-    }, {
-      code: 'TW',
-      name: 'Taiwan'
-    }, {
-      code: 'UZ',
-      name: 'Uzbekistan'
-    }, {
-      code: 'VN',
-      name: 'Vietnam'
-    }, {
-      code: 'YE',
-      name: 'Yemen'
-    }]
-  },
-  Europe: {
-    image: 'Austria.jpg',
-    countries: [{
-      code: 'AD',
-      name: 'Andorra'
-    }, {
-      code: 'AL',
-      name: 'Albania'
-    }, {
-      code: 'AT',
-      name: 'Austria'
-    }, {
-      code: 'AX',
-      name: 'Aland Islands'
-    }, {
-      code: 'BA',
-      name: 'Bosnia and Herzegovina'
-    }, {
-      code: 'BE',
-      name: 'Belgium'
-    }, {
-      code: 'BG',
-      name: 'Bulgaria'
-    }, {
-      code: 'BY',
-      name: 'Belarus'
-    }, {
-      code: 'CH',
-      name: 'Switzerland'
-    }, {
-      code: 'CY',
-      name: 'Cyprus'
-    }, {
-      code: 'CZ',
-      name: 'Czechia'
-    }, {
-      code: 'DE',
-      name: 'Germany'
-    }, {
-      code: 'DK',
-      name: 'Denmark'
-    }, {
-      code: 'EE',
-      name: 'Estonia'
-    }, {
-      code: 'ES',
-      name: 'Spain'
-    }, {
-      code: 'FI',
-      name: 'Finland'
-    }, {
-      code: 'FO',
-      name: 'Faroe Islands'
-    }, {
-      code: 'FR',
-      name: 'France'
-    }, {
-      code: 'GB',
-      name: 'United Kingdom'
-    }, {
-      code: 'GG',
-      name: 'Guernsey'
-    }, {
-      code: 'GI',
-      name: 'Gibraltar'
-    }, {
-      code: 'GR',
-      name: 'Greece'
-    }, {
-      code: 'HR',
-      name: 'Croatia'
-    }, {
-      code: 'HU',
-      name: 'Hungary'
-    }, {
-      code: 'IE',
-      name: 'Ireland'
-    }, {
-      code: 'IM',
-      name: 'Isle of Man'
-    }, {
-      code: 'IS',
-      name: 'Iceland'
-    }, {
-      code: 'IT',
-      name: 'Italy'
-    }, {
-      code: 'JE',
-      name: 'Jersey'
-    }, {
-      code: 'XK',
-      name: 'Kosovo'
-    }, {
-      code: 'LI',
-      name: 'Liechtenstein'
-    }, {
-      code: 'LT',
-      name: 'Lithuania'
-    }, {
-      code: 'LU',
-      name: 'Luxembourg'
-    }, {
-      code: 'LV',
-      name: 'Latvia'
-    }, {
-      code: 'MC',
-      name: 'Monaco'
-    }, {
-      code: 'MD',
-      name: 'Moldova'
-    }, {
-      code: 'ME',
-      name: 'Montenegro'
-    }, {
-      code: 'MK',
-      name: 'North Macedonia'
-    }, {
-      code: 'MT',
-      name: 'Malta'
-    }, {
-      code: 'NL',
-      name: 'Netherlands'
-    }, {
-      code: 'NO',
-      name: 'Norway'
-    }, {
-      code: 'PL',
-      name: 'Poland'
-    }, {
-      code: 'PT',
-      name: 'Portugal'
-    }, {
-      code: 'RO',
-      name: 'Romania'
-    }, {
-      code: 'RS',
-      name: 'Serbia'
-    }, {
-      code: 'RU',
-      name: 'Russia'
-    }, {
-      code: 'SE',
-      name: 'Sweden'
-    }, {
-      code: 'SI',
-      name: 'Slovenia'
-    }, {
-      code: 'SJ',
-      name: 'Svalbard and Jan Mayen'
-    }, {
-      code: 'SK',
-      name: 'Slovakia'
-    }, {
-      code: 'SM',
-      name: 'San Marino'
-    }, {
-      code: 'UA',
-      name: 'Ukraine'
-    }, {
-      code: 'VA',
-      name: 'Vatican'
-    }, {
-      code: 'CS',
-      name: 'Serbia and Montenegro'
-    }]
-  },
-  'North America': {
-    image: 'Canadian-Rockies.jpg',
-    countries: [{
-      code: 'AG',
-      name: 'Antigua and Barbuda'
-    }, {
-      code: 'AI',
-      name: 'Anguilla'
-    }, {
-      code: 'AW',
-      name: 'Aruba'
-    }, {
-      code: 'BB',
-      name: 'Barbados'
-    }, {
-      code: 'BL',
-      name: 'Saint Barthelemy'
-    }, {
-      code: 'BM',
-      name: 'Bermuda'
-    }, {
-      code: 'BQ',
-      name: 'Bonaire, Saint Eustatius and Saba'
-    }, {
-      code: 'BS',
-      name: 'Bahamas'
-    }, {
-      code: 'BZ',
-      name: 'Belize'
-    }, {
-      code: 'CA',
-      name: 'Canada'
-    }, {
-      code: 'CR',
-      name: 'Costa Rica'
-    }, {
-      code: 'CU',
-      name: 'Cuba'
-    }, {
-      code: 'CW',
-      name: 'Curacao'
-    }, {
-      code: 'DM',
-      name: 'Dominica'
-    }, {
-      code: 'DO',
-      name: 'Dominican Republic'
-    }, {
-      code: 'GD',
-      name: 'Grenada'
-    }, {
-      code: 'GL',
-      name: 'Greenland'
-    }, {
-      code: 'GP',
-      name: 'Guadeloupe'
-    }, {
-      code: 'GT',
-      name: 'Guatemala'
-    }, {
-      code: 'HN',
-      name: 'Honduras'
-    }, {
-      code: 'HT',
-      name: 'Haiti'
-    }, {
-      code: 'JM',
-      name: 'Jamaica'
-    }, {
-      code: 'KN',
-      name: 'Saint Kitts and Nevis'
-    }, {
-      code: 'KY',
-      name: 'Cayman Islands'
-    }, {
-      code: 'LC',
-      name: 'Saint Lucia'
-    }, {
-      code: 'MF',
-      name: 'Saint Martin'
-    }, {
-      code: 'MQ',
-      name: 'Martinique'
-    }, {
-      code: 'MS',
-      name: 'Montserrat'
-    }, {
-      code: 'MX',
-      name: 'Mexico'
-    }, {
-      code: 'NI',
-      name: 'Nicaragua'
-    }, {
-      code: 'PA',
-      name: 'Panama'
-    }, {
-      code: 'PM',
-      name: 'Saint Pierre and Miquelon'
-    }, {
-      code: 'PR',
-      name: 'Puerto Rico'
-    }, {
-      code: 'SV',
-      name: 'El Salvador'
-    }, {
-      code: 'SX',
-      name: 'Sint Maarten'
-    }, {
-      code: 'TC',
-      name: 'Turks and Caicos Islands'
-    }, {
-      code: 'TT',
-      name: 'Trinidad and Tobago'
-    }, {
-      code: 'US',
-      name: 'United States'
-    }, {
-      code: 'VC',
-      name: 'Saint Vincent and the Grenadines'
-    }, {
-      code: 'VG',
-      name: 'British Virgin Islands'
-    }, {
-      code: 'VI',
-      name: 'U.S. Virgin Islands'
-    }, {
-      code: 'AN',
-      name: 'Netherlands Antilles'
-    }]
-  },
-  'South America': {
-    image: 'Venezuela.jpg',
-    countries: [{
-      code: 'AR',
-      name: 'Argentina'
-    }, {
-      code: 'BO',
-      name: 'Bolivia'
-    }, {
-      code: 'BR',
-      name: 'Brazil'
-    }, {
-      code: 'CL',
-      name: 'Chile'
-    }, {
-      code: 'CO',
-      name: 'Colombia'
-    }, {
-      code: 'EC',
-      name: 'Ecuador'
-    }, {
-      code: 'FK',
-      name: 'Falkland Islands'
-    }, {
-      code: 'GF',
-      name: 'French Guiana'
-    }, {
-      code: 'GY',
-      name: 'Guyana'
-    }, {
-      code: 'PE',
-      name: 'Peru'
-    }, {
-      code: 'PY',
-      name: 'Paraguay'
-    }, {
-      code: 'SR',
-      name: 'Suriname'
-    }, {
-      code: 'UY',
-      name: 'Uruguay'
-    }, {
-      code: 'VE',
-      name: 'Venezuela'
-    }]
-  },
-  Oceania: {
-    image: 'Tonga.jpg',
-    countries: [{
-      code: 'AS',
-      name: 'American Samoa'
-    }, {
-      code: 'AU',
-      name: 'Australia'
-    }, {
-      code: 'CK',
-      name: 'Cook Islands'
-    }, {
-      code: 'CX',
-      name: 'Christmas Island'
-    }, {
-      code: 'FJ',
-      name: 'Fiji'
-    }, {
-      code: 'FM',
-      name: 'Micronesia'
-    }, {
-      code: 'GU',
-      name: 'Guam'
-    }, {
-      code: 'KI',
-      name: 'Kiribati'
-    }, {
-      code: 'MH',
-      name: 'Marshall Islands'
-    }, {
-      code: 'MP',
-      name: 'Northern Mariana Islands'
-    }, {
-      code: 'NC',
-      name: 'New Caledonia'
-    }, {
-      code: 'NF',
-      name: 'Norfolk Island'
-    }, {
-      code: 'NR',
-      name: 'Nauru'
-    }, {
-      code: 'NU',
-      name: 'Niue'
-    }, {
-      code: 'NZ',
-      name: 'New Zealand'
-    }, {
-      code: 'PF',
-      name: 'French Polynesia'
-    }, {
-      code: 'PG',
-      name: 'Papua New Guinea'
-    }, {
-      code: 'PN',
-      name: 'Pitcairn'
-    }, {
-      code: 'PW',
-      name: 'Palau'
-    }, {
-      code: 'SB',
-      name: 'Solomon Islands'
-    }, {
-      code: 'TK',
-      name: 'Tokelau'
-    }, {
-      code: 'TL',
-      name: 'Timor Leste'
-    }, {
-      code: 'TO',
-      name: 'Tonga'
-    }, {
-      code: 'TV',
-      name: 'Tuvalu'
-    }, {
-      code: 'UM',
-      name: 'United States Minor Outlying Islands'
-    }, {
-      code: 'VU',
-      name: 'Vanuatu'
-    }, {
-      code: 'WF',
-      name: 'Wallis and Futuna'
-    }, {
-      code: 'WS',
-      name: 'Samoa'
-    }]
-  }
-});
-
-/***/ }),
-
-/***/ "./data/countries.js":
-/*!***************************!*\
-  !*** ./data/countries.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
-  code: 'AD',
-  name: 'Andorra',
-  capital: 'Andorra la Vella',
-  areaSqKms: '468',
-  population: '77006',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'ES,FR',
-  flag: '🇦🇩'
-}, {
-  code: 'AE',
-  name: 'United Arab Emirates',
-  capital: 'Abu Dhabi',
-  areaSqKms: '82880',
-  population: '9630959',
-  currencyCode: 'AED',
-  currencyName: 'Dirham',
-  neighbours: 'SA,OM',
-  flag: '🇦🇪'
-}, {
-  code: 'AF',
-  name: 'Afghanistan',
-  capital: 'Kabul',
-  areaSqKms: '647500',
-  population: '37172386',
-  currencyCode: 'AFN',
-  currencyName: 'Afghani',
-  neighbours: 'TM,CN,IR,TJ,PK,UZ',
-  flag: '🇦🇫'
-}, {
-  code: 'AG',
-  name: 'Antigua and Barbuda',
-  capital: "St. John's",
-  areaSqKms: '443',
-  population: '96286',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇦🇬'
-}, {
-  code: 'AI',
-  name: 'Anguilla',
-  capital: 'The Valley',
-  areaSqKms: '102',
-  population: '13254',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇦🇮'
-}, {
-  code: 'AL',
-  name: 'Albania',
-  capital: 'Tirana',
-  areaSqKms: '28748',
-  population: '2866376',
-  currencyCode: 'ALL',
-  currencyName: 'Lek',
-  neighbours: 'MK,GR,ME,RS,XK',
-  flag: '🇦🇱'
-}, {
-  code: 'AM',
-  name: 'Armenia',
-  capital: 'Yerevan',
-  areaSqKms: '29800',
-  population: '2951776',
-  currencyCode: 'AMD',
-  currencyName: 'Dram',
-  neighbours: 'GE,IR,AZ,TR',
-  flag: '🇦🇲'
-}, {
-  code: 'AO',
-  name: 'Angola',
-  capital: 'Luanda',
-  areaSqKms: '1246700',
-  population: '30809762',
-  currencyCode: 'AOA',
-  currencyName: 'Kwanza',
-  neighbours: 'CD,NA,ZM,CG',
-  flag: '🇦🇴'
-}, {
-  code: 'AQ',
-  name: 'Antarctica',
-  capital: '',
-  areaSqKms: '14000000',
-  population: '0',
-  currencyCode: '',
-  currencyName: '',
-  neighbours: '',
-  flag: '🇦🇶'
-}, {
-  code: 'AR',
-  name: 'Argentina',
-  capital: 'Buenos Aires',
-  areaSqKms: '2766890',
-  population: '44494502',
-  currencyCode: 'ARS',
-  currencyName: 'Peso',
-  neighbours: 'CL,BO,UY,PY,BR',
-  flag: '🇦🇷'
-}, {
-  code: 'AS',
-  name: 'American Samoa',
-  capital: 'Pago Pago',
-  areaSqKms: '199',
-  population: '55465',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇦🇸'
-}, {
-  code: 'AT',
-  name: 'Austria',
-  capital: 'Vienna',
-  areaSqKms: '83858',
-  population: '8847037',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'CH,DE,HU,SK,CZ,IT,SI,LI',
-  flag: '🇦🇹'
-}, {
-  code: 'AU',
-  name: 'Australia',
-  capital: 'Canberra',
-  areaSqKms: '7686850',
-  population: '24992369',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇦🇺'
-}, {
-  code: 'AW',
-  name: 'Aruba',
-  capital: 'Oranjestad',
-  areaSqKms: '193',
-  population: '105845',
-  currencyCode: 'AWG',
-  currencyName: 'Guilder',
-  neighbours: '',
-  flag: '🇦🇼'
-}, {
-  code: 'AX',
-  name: 'Aland Islands',
-  capital: 'Mariehamn',
-  areaSqKms: '1580',
-  population: '26711',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇦🇽'
-}, {
-  code: 'AZ',
-  name: 'Azerbaijan',
-  capital: 'Baku',
-  areaSqKms: '86600',
-  population: '9942334',
-  currencyCode: 'AZN',
-  currencyName: 'Manat',
-  neighbours: 'GE,IR,AM,TR,RU',
-  flag: '🇦🇿'
-}, {
-  code: 'BA',
-  name: 'Bosnia and Herzegovina',
-  capital: 'Sarajevo',
-  areaSqKms: '51129',
-  population: '3323929',
-  currencyCode: 'BAM',
-  currencyName: 'Marka',
-  neighbours: 'HR,ME,RS',
-  flag: '🇧🇦'
-}, {
-  code: 'BB',
-  name: 'Barbados',
-  capital: 'Bridgetown',
-  areaSqKms: '431',
-  population: '286641',
-  currencyCode: 'BBD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇧🇧'
-}, {
-  code: 'BD',
-  name: 'Bangladesh',
-  capital: 'Dhaka',
-  areaSqKms: '144000',
-  population: '161356039',
-  currencyCode: 'BDT',
-  currencyName: 'Taka',
-  neighbours: 'MM,IN',
-  flag: '🇧🇩'
-}, {
-  code: 'BE',
-  name: 'Belgium',
-  capital: 'Brussels',
-  areaSqKms: '30510',
-  population: '11422068',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'DE,NL,LU,FR',
-  flag: '🇧🇪'
-}, {
-  code: 'BF',
-  name: 'Burkina Faso',
-  capital: 'Ouagadougou',
-  areaSqKms: '274200',
-  population: '19751535',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'NE,BJ,GH,CI,TG,ML',
-  flag: '🇧🇫'
-}, {
-  code: 'BG',
-  name: 'Bulgaria',
-  capital: 'Sofia',
-  areaSqKms: '110910',
-  population: '7000039',
-  currencyCode: 'BGN',
-  currencyName: 'Lev',
-  neighbours: 'MK,GR,RO,TR,RS',
-  flag: '🇧🇬'
-}, {
-  code: 'BH',
-  name: 'Bahrain',
-  capital: 'Manama',
-  areaSqKms: '665',
-  population: '1569439',
-  currencyCode: 'BHD',
-  currencyName: 'Dinar',
-  neighbours: '',
-  flag: '🇧🇭'
-}, {
-  code: 'BI',
-  name: 'Burundi',
-  capital: 'Gitega',
-  areaSqKms: '27830',
-  population: '11175378',
-  currencyCode: 'BIF',
-  currencyName: 'Franc',
-  neighbours: 'TZ,CD,RW',
-  flag: '🇧🇮'
-}, {
-  code: 'BJ',
-  name: 'Benin',
-  capital: 'Porto-Novo',
-  areaSqKms: '112620',
-  population: '11485048',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'NE,TG,BF,NG',
-  flag: '🇧🇯'
-}, {
-  code: 'BL',
-  name: 'Saint Barthelemy',
-  capital: 'Gustavia',
-  areaSqKms: '21',
-  population: '8450',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇧🇱'
-}, {
-  code: 'BM',
-  name: 'Bermuda',
-  capital: 'Hamilton',
-  areaSqKms: '53',
-  population: '63968',
-  currencyCode: 'BMD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇧🇲'
-}, {
-  code: 'BN',
-  name: 'Brunei',
-  capital: 'Bandar Seri Begawan',
-  areaSqKms: '5770',
-  population: '428962',
-  currencyCode: 'BND',
-  currencyName: 'Dollar',
-  neighbours: 'MY',
-  flag: '🇧🇳'
-}, {
-  code: 'BO',
-  name: 'Bolivia',
-  capital: 'Sucre',
-  areaSqKms: '1098580',
-  population: '11353142',
-  currencyCode: 'BOB',
-  currencyName: 'Boliviano',
-  neighbours: 'PE,CL,PY,BR,AR',
-  flag: '🇧🇴'
-}, {
-  code: 'BQ',
-  name: 'Bonaire, Saint Eustatius and Saba',
-  capital: '',
-  areaSqKms: '328',
-  population: '18012',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇧🇶'
-}, {
-  code: 'BR',
-  name: 'Brazil',
-  capital: 'Brasilia',
-  areaSqKms: '8511965',
-  population: '209469333',
-  currencyCode: 'BRL',
-  currencyName: 'Real',
-  neighbours: 'SR,PE,BO,UY,GY,PY,GF,VE,CO,AR',
-  flag: '🇧🇷'
-}, {
-  code: 'BS',
-  name: 'Bahamas',
-  capital: 'Nassau',
-  areaSqKms: '13940',
-  population: '385640',
-  currencyCode: 'BSD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇧🇸'
-}, {
-  code: 'BT',
-  name: 'Bhutan',
-  capital: 'Thimphu',
-  areaSqKms: '47000',
-  population: '754394',
-  currencyCode: 'BTN',
-  currencyName: 'Ngultrum',
-  neighbours: 'CN,IN',
-  flag: '🇧🇹'
-}, {
-  code: 'BV',
-  name: 'Bouvet Island',
-  capital: '',
-  areaSqKms: '49',
-  population: '0',
-  currencyCode: 'NOK',
-  currencyName: 'Krone',
-  neighbours: '',
-  flag: '🇧🇻'
-}, {
-  code: 'BW',
-  name: 'Botswana',
-  capital: 'Gaborone',
-  areaSqKms: '600370',
-  population: '2254126',
-  currencyCode: 'BWP',
-  currencyName: 'Pula',
-  neighbours: 'ZW,ZA,NA',
-  flag: '🇧🇼'
-}, {
-  code: 'BY',
-  name: 'Belarus',
-  capital: 'Minsk',
-  areaSqKms: '207600',
-  population: '9485386',
-  currencyCode: 'BYN',
-  currencyName: 'Belarusian ruble',
-  neighbours: 'PL,LT,UA,RU,LV',
-  flag: '🇧🇾'
-}, {
-  code: 'BZ',
-  name: 'Belize',
-  capital: 'Belmopan',
-  areaSqKms: '22966',
-  population: '383071',
-  currencyCode: 'BZD',
-  currencyName: 'Dollar',
-  neighbours: 'GT,MX',
-  flag: '🇧🇿'
-}, {
-  code: 'CA',
-  name: 'Canada',
-  capital: 'Ottawa',
-  areaSqKms: '9984670',
-  population: '37058856',
-  currencyCode: 'CAD',
-  currencyName: 'Dollar',
-  neighbours: 'US',
-  flag: '🇨🇦'
-}, {
-  code: 'CC',
-  name: 'Cocos Islands',
-  capital: 'West Island',
-  areaSqKms: '14',
-  population: '628',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇨🇨'
-}, {
-  code: 'CD',
-  name: 'Democratic Republic of the Congo',
-  capital: 'Kinshasa',
-  areaSqKms: '2345410',
-  population: '84068091',
-  currencyCode: 'CDF',
-  currencyName: 'Franc',
-  neighbours: 'TZ,CF,SS,RW,ZM,BI,UG,CG,AO',
-  flag: '🇨🇩'
-}, {
-  code: 'CF',
-  name: 'Central African Republic',
-  capital: 'Bangui',
-  areaSqKms: '622984',
-  population: '4666377',
-  currencyCode: 'XAF',
-  currencyName: 'Franc',
-  neighbours: 'TD,SD,CD,SS,CM,CG',
-  flag: '🇨🇫'
-}, {
-  code: 'CG',
-  name: 'Republic of the Congo',
-  capital: 'Brazzaville',
-  areaSqKms: '342000',
-  population: '5244363',
-  currencyCode: 'XAF',
-  currencyName: 'Franc',
-  neighbours: 'CF,GA,CD,CM,AO',
-  flag: '🇨🇬'
-}, {
-  code: 'CH',
-  name: 'Switzerland',
-  capital: 'Bern',
-  areaSqKms: '41290',
-  population: '8516543',
-  currencyCode: 'CHF',
-  currencyName: 'Franc',
-  neighbours: 'DE,IT,LI,FR,AT',
-  flag: '🇨🇭'
-}, {
-  code: 'CI',
-  name: 'Ivory Coast',
-  capital: 'Yamoussoukro',
-  areaSqKms: '322460',
-  population: '25069229',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'LR,GH,GN,BF,ML',
-  flag: '🇨🇮'
-}, {
-  code: 'CK',
-  name: 'Cook Islands',
-  capital: 'Avarua',
-  areaSqKms: '240',
-  population: '21388',
-  currencyCode: 'NZD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇨🇰'
-}, {
-  code: 'CL',
-  name: 'Chile',
-  capital: 'Santiago',
-  areaSqKms: '756950',
-  population: '18729160',
-  currencyCode: 'CLP',
-  currencyName: 'Peso',
-  neighbours: 'PE,BO,AR',
-  flag: '🇨🇱'
-}, {
-  code: 'CM',
-  name: 'Cameroon',
-  capital: 'Yaounde',
-  areaSqKms: '475440',
-  population: '25216237',
-  currencyCode: 'XAF',
-  currencyName: 'Franc',
-  neighbours: 'TD,CF,GA,GQ,CG,NG',
-  flag: '🇨🇲'
-}, {
-  code: 'CN',
-  name: 'China',
-  capital: 'Beijing',
-  areaSqKms: '9596960',
-  population: '1392730000',
-  currencyCode: 'CNY',
-  currencyName: 'Yuan Renminbi',
-  neighbours: 'LA,BT,TJ,KZ,MN,AF,NP,MM,KG,PK,KP,RU,VN,IN',
-  flag: '🇨🇳'
-}, {
-  code: 'CO',
-  name: 'Colombia',
-  capital: 'Bogota',
-  areaSqKms: '1138910',
-  population: '49648685',
-  currencyCode: 'COP',
-  currencyName: 'Peso',
-  neighbours: 'EC,PE,PA,BR,VE',
-  flag: '🇨🇴'
-}, {
-  code: 'CR',
-  name: 'Costa Rica',
-  capital: 'San Jose',
-  areaSqKms: '51100',
-  population: '4999441',
-  currencyCode: 'CRC',
-  currencyName: 'Colon',
-  neighbours: 'PA,NI',
-  flag: '🇨🇷'
-}, {
-  code: 'CU',
-  name: 'Cuba',
-  capital: 'Havana',
-  areaSqKms: '110860',
-  population: '11338138',
-  currencyCode: 'CUP',
-  currencyName: 'Peso',
-  neighbours: 'US',
-  flag: '🇨🇺'
-}, {
-  code: 'CV',
-  name: 'Cabo Verde',
-  capital: 'Praia',
-  areaSqKms: '4033',
-  population: '543767',
-  currencyCode: 'CVE',
-  currencyName: 'Escudo',
-  neighbours: '',
-  flag: '🇨🇻'
-}, {
-  code: 'CW',
-  name: 'Curacao',
-  capital: 'Willemstad',
-  areaSqKms: '444',
-  population: '159849',
-  currencyCode: 'ANG',
-  currencyName: 'Guilder',
-  neighbours: '',
-  flag: '🇨🇼'
-}, {
-  code: 'CX',
-  name: 'Christmas Island',
-  capital: 'Flying Fish Cove',
-  areaSqKms: '135',
-  population: '1500',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇨🇽'
-}, {
-  code: 'CY',
-  name: 'Cyprus',
-  capital: 'Nicosia',
-  areaSqKms: '9250',
-  population: '1189265',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇨🇾'
-}, {
-  code: 'CZ',
-  name: 'Czechia',
-  capital: 'Prague',
-  areaSqKms: '78866',
-  population: '10625695',
-  currencyCode: 'CZK',
-  currencyName: 'Koruna',
-  neighbours: 'PL,DE,SK,AT',
-  flag: '🇨🇿'
-}, {
-  code: 'DE',
-  name: 'Germany',
-  capital: 'Berlin',
-  areaSqKms: '357021',
-  population: '82927922',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'CH,PL,NL,DK,BE,CZ,LU,FR,AT',
-  flag: '🇩🇪'
-}, {
-  code: 'DJ',
-  name: 'Djibouti',
-  capital: 'Djibouti',
-  areaSqKms: '23000',
-  population: '958920',
-  currencyCode: 'DJF',
-  currencyName: 'Franc',
-  neighbours: 'ER,ET,SO',
-  flag: '🇩🇯'
-}, {
-  code: 'DK',
-  name: 'Denmark',
-  capital: 'Copenhagen',
-  areaSqKms: '43094',
-  population: '5797446',
-  currencyCode: 'DKK',
-  currencyName: 'Krone',
-  neighbours: 'DE',
-  flag: '🇩🇰'
-}, {
-  code: 'DM',
-  name: 'Dominica',
-  capital: 'Roseau',
-  areaSqKms: '754',
-  population: '71625',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇩🇲'
-}, {
-  code: 'DO',
-  name: 'Dominican Republic',
-  capital: 'Santo Domingo',
-  areaSqKms: '48730',
-  population: '10627165',
-  currencyCode: 'DOP',
-  currencyName: 'Peso',
-  neighbours: 'HT',
-  flag: '🇩🇴'
-}, {
-  code: 'DZ',
-  name: 'Algeria',
-  capital: 'Algiers',
-  areaSqKms: '2381740',
-  population: '42228429',
-  currencyCode: 'DZD',
-  currencyName: 'Dinar',
-  neighbours: 'NE,EH,LY,MR,TN,MA,ML',
-  flag: '🇩🇿'
-}, {
-  code: 'EC',
-  name: 'Ecuador',
-  capital: 'Quito',
-  areaSqKms: '283560',
-  population: '17084357',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: 'PE,CO',
-  flag: '🇪🇨'
-}, {
-  code: 'EE',
-  name: 'Estonia',
-  capital: 'Tallinn',
-  areaSqKms: '45226',
-  population: '1320884',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'RU,LV',
-  flag: '🇪🇪'
-}, {
-  code: 'EG',
-  name: 'Egypt',
-  capital: 'Cairo',
-  areaSqKms: '1001450',
-  population: '98423595',
-  currencyCode: 'EGP',
-  currencyName: 'Pound',
-  neighbours: 'LY,SD,IL,PS',
-  flag: '🇪🇬'
-}, {
-  code: 'EH',
-  name: 'Western Sahara',
-  capital: 'El-Aaiun',
-  areaSqKms: '266000',
-  population: '273008',
-  currencyCode: 'MAD',
-  currencyName: 'Dirham',
-  neighbours: 'DZ,MR,MA',
-  flag: '🇪🇭'
-}, {
-  code: 'ER',
-  name: 'Eritrea',
-  capital: 'Asmara',
-  areaSqKms: '121320',
-  population: '0',
-  currencyCode: 'ERN',
-  currencyName: 'Nakfa',
-  neighbours: 'ET,SD,DJ',
-  flag: '🇪🇷'
-}, {
-  code: 'ES',
-  name: 'Spain',
-  capital: 'Madrid',
-  areaSqKms: '504782',
-  population: '46723749',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'AD,PT,GI,FR,MA',
-  flag: '🇪🇸'
-}, {
-  code: 'ET',
-  name: 'Ethiopia',
-  capital: 'Addis Ababa',
-  areaSqKms: '1127127',
-  population: '109224559',
-  currencyCode: 'ETB',
-  currencyName: 'Birr',
-  neighbours: 'ER,KE,SD,SS,SO,DJ',
-  flag: '🇪🇹'
-}, {
-  code: 'FI',
-  name: 'Finland',
-  capital: 'Helsinki',
-  areaSqKms: '337030',
-  population: '5518050',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'NO,RU,SE',
-  flag: '🇫🇮'
-}, {
-  code: 'FJ',
-  name: 'Fiji',
-  capital: 'Suva',
-  areaSqKms: '18270',
-  population: '883483',
-  currencyCode: 'FJD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇫🇯'
-}, {
-  code: 'FK',
-  name: 'Falkland Islands',
-  capital: 'Stanley',
-  areaSqKms: '12173',
-  population: '2638',
-  currencyCode: 'FKP',
-  currencyName: 'Pound',
-  neighbours: '',
-  flag: '🇫🇰'
-}, {
-  code: 'FM',
-  name: 'Micronesia',
-  capital: 'Palikir',
-  areaSqKms: '702',
-  population: '112640',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇫🇲'
-}, {
-  code: 'FO',
-  name: 'Faroe Islands',
-  capital: 'Torshavn',
-  areaSqKms: '1399',
-  population: '48497',
-  currencyCode: 'DKK',
-  currencyName: 'Krone',
-  neighbours: '',
-  flag: '🇫🇴'
-}, {
-  code: 'FR',
-  name: 'France',
-  capital: 'Paris',
-  areaSqKms: '547030',
-  population: '66987244',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'CH,DE,BE,LU,IT,AD,MC,ES',
-  flag: '🇫🇷'
-}, {
-  code: 'GA',
-  name: 'Gabon',
-  capital: 'Libreville',
-  areaSqKms: '267667',
-  population: '2119275',
-  currencyCode: 'XAF',
-  currencyName: 'Franc',
-  neighbours: 'CM,GQ,CG',
-  flag: '🇬🇦'
-}, {
-  code: 'GB',
-  name: 'United Kingdom',
-  capital: 'London',
-  areaSqKms: '244820',
-  population: '66488991',
-  currencyCode: 'GBP',
-  currencyName: 'Pound',
-  neighbours: 'IE',
-  flag: '🇬🇧'
-}, {
-  code: 'GD',
-  name: 'Grenada',
-  capital: "St. George's",
-  areaSqKms: '344',
-  population: '111454',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇬🇩'
-}, {
-  code: 'GE',
-  name: 'Georgia',
-  capital: 'Tbilisi',
-  areaSqKms: '69700',
-  population: '3731000',
-  currencyCode: 'GEL',
-  currencyName: 'Lari',
-  neighbours: 'AM,AZ,TR,RU',
-  flag: '🇬🇪'
-}, {
-  code: 'GF',
-  name: 'French Guiana',
-  capital: 'Cayenne',
-  areaSqKms: '91000',
-  population: '195506',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'SR,BR',
-  flag: '🇬🇫'
-}, {
-  code: 'GG',
-  name: 'Guernsey',
-  capital: 'St Peter Port',
-  areaSqKms: '78',
-  population: '65228',
-  currencyCode: 'GBP',
-  currencyName: 'Pound',
-  neighbours: '',
-  flag: '🇬🇬'
-}, {
-  code: 'GH',
-  name: 'Ghana',
-  capital: 'Accra',
-  areaSqKms: '239460',
-  population: '29767108',
-  currencyCode: 'GHS',
-  currencyName: 'Cedi',
-  neighbours: 'CI,TG,BF',
-  flag: '🇬🇭'
-}, {
-  code: 'GI',
-  name: 'Gibraltar',
-  capital: 'Gibraltar',
-  areaSqKms: '6.5',
-  population: '33718',
-  currencyCode: 'GIP',
-  currencyName: 'Pound',
-  neighbours: 'ES',
-  flag: '🇬🇮'
-}, {
-  code: 'GL',
-  name: 'Greenland',
-  capital: 'Nuuk',
-  areaSqKms: '2166086',
-  population: '56025',
-  currencyCode: 'DKK',
-  currencyName: 'Krone',
-  neighbours: '',
-  flag: '🇬🇱'
-}, {
-  code: 'GM',
-  name: 'Gambia',
-  capital: 'Banjul',
-  areaSqKms: '11300',
-  population: '2280102',
-  currencyCode: 'GMD',
-  currencyName: 'Dalasi',
-  neighbours: 'SN',
-  flag: '🇬🇲'
-}, {
-  code: 'GN',
-  name: 'Guinea',
-  capital: 'Conakry',
-  areaSqKms: '245857',
-  population: '12414318',
-  currencyCode: 'GNF',
-  currencyName: 'Franc',
-  neighbours: 'LR,SN,SL,CI,GW,ML',
-  flag: '🇬🇳'
-}, {
-  code: 'GP',
-  name: 'Guadeloupe',
-  capital: 'Basse-Terre',
-  areaSqKms: '1780',
-  population: '443000',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇬🇵'
-}, {
-  code: 'GQ',
-  name: 'Equatorial Guinea',
-  capital: 'Malabo',
-  areaSqKms: '28051',
-  population: '1308974',
-  currencyCode: 'XAF',
-  currencyName: 'Franc',
-  neighbours: 'GA,CM',
-  flag: '🇬🇶'
-}, {
-  code: 'GR',
-  name: 'Greece',
-  capital: 'Athens',
-  areaSqKms: '131940',
-  population: '10727668',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'AL,MK,TR,BG',
-  flag: '🇬🇷'
-}, {
-  code: 'GS',
-  name: 'South Georgia and the South Sandwich Islands',
-  capital: 'Grytviken',
-  areaSqKms: '3903',
-  population: '30',
-  currencyCode: 'GBP',
-  currencyName: 'Pound',
-  neighbours: '',
-  flag: '🇬🇸'
-}, {
-  code: 'GT',
-  name: 'Guatemala',
-  capital: 'Guatemala City',
-  areaSqKms: '108890',
-  population: '17247807',
-  currencyCode: 'GTQ',
-  currencyName: 'Quetzal',
-  neighbours: 'MX,HN,BZ,SV',
-  flag: '🇬🇹'
-}, {
-  code: 'GU',
-  name: 'Guam',
-  capital: 'Hagatna',
-  areaSqKms: '549',
-  population: '165768',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇬🇺'
-}, {
-  code: 'GW',
-  name: 'Guinea-Bissau',
-  capital: 'Bissau',
-  areaSqKms: '36120',
-  population: '1874309',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'SN,GN',
-  flag: '🇬🇼'
-}, {
-  code: 'GY',
-  name: 'Guyana',
-  capital: 'Georgetown',
-  areaSqKms: '214970',
-  population: '779004',
-  currencyCode: 'GYD',
-  currencyName: 'Dollar',
-  neighbours: 'SR,BR,VE',
-  flag: '🇬🇾'
-}, {
-  code: 'HK',
-  name: 'Hong Kong',
-  capital: 'Hong Kong',
-  areaSqKms: '1092',
-  population: '7451000',
-  currencyCode: 'HKD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇭🇰'
-}, {
-  code: 'HM',
-  name: 'Heard Island and McDonald Islands',
-  capital: '',
-  areaSqKms: '412',
-  population: '0',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇭🇲'
-}, {
-  code: 'HN',
-  name: 'Honduras',
-  capital: 'Tegucigalpa',
-  areaSqKms: '112090',
-  population: '9587522',
-  currencyCode: 'HNL',
-  currencyName: 'Lempira',
-  neighbours: 'GT,NI,SV',
-  flag: '🇭🇳'
-}, {
-  code: 'HR',
-  name: 'Croatia',
-  capital: 'Zagreb',
-  areaSqKms: '56542',
-  population: '4089400',
-  currencyCode: 'HRK',
-  currencyName: 'Kuna',
-  neighbours: 'HU,SI,BA,ME,RS',
-  flag: '🇭🇷'
-}, {
-  code: 'HT',
-  name: 'Haiti',
-  capital: 'Port-au-Prince',
-  areaSqKms: '27750',
-  population: '11123176',
-  currencyCode: 'HTG',
-  currencyName: 'Gourde',
-  neighbours: 'DO',
-  flag: '🇭🇹'
-}, {
-  code: 'HU',
-  name: 'Hungary',
-  capital: 'Budapest',
-  areaSqKms: '93030',
-  population: '9768785',
-  currencyCode: 'HUF',
-  currencyName: 'Forint',
-  neighbours: 'SK,SI,RO,UA,HR,AT,RS',
-  flag: '🇭🇺'
-}, {
-  code: 'ID',
-  name: 'Indonesia',
-  capital: 'Jakarta',
-  areaSqKms: '1919440',
-  population: '267663435',
-  currencyCode: 'IDR',
-  currencyName: 'Rupiah',
-  neighbours: 'PG,TL,MY',
-  flag: '🇮🇩'
-}, {
-  code: 'IE',
-  name: 'Ireland',
-  capital: 'Dublin',
-  areaSqKms: '70280',
-  population: '4853506',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'GB',
-  flag: '🇮🇪'
-}, {
-  code: 'IL',
-  name: 'Israel',
-  capital: 'Jerusalem',
-  areaSqKms: '20770',
-  population: '8883800',
-  currencyCode: 'ILS',
-  currencyName: 'Shekel',
-  neighbours: 'SY,JO,LB,EG,PS',
-  flag: '🇮🇱'
-}, {
-  code: 'IM',
-  name: 'Isle of Man',
-  capital: 'Douglas',
-  areaSqKms: '572',
-  population: '84077',
-  currencyCode: 'GBP',
-  currencyName: 'Pound',
-  neighbours: '',
-  flag: '🇮🇲'
-}, {
-  code: 'IN',
-  name: 'India',
-  capital: 'New Delhi',
-  areaSqKms: '3287590',
-  population: '1352617328',
-  currencyCode: 'INR',
-  currencyName: 'Rupee',
-  neighbours: 'CN,NP,MM,BT,PK,BD',
-  flag: '🇮🇳'
-}, {
-  code: 'IO',
-  name: 'British Indian Ocean Territory',
-  capital: 'Diego Garcia',
-  areaSqKms: '60',
-  population: '4000',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇮🇴'
-}, {
-  code: 'IQ',
-  name: 'Iraq',
-  capital: 'Baghdad',
-  areaSqKms: '437072',
-  population: '38433600',
-  currencyCode: 'IQD',
-  currencyName: 'Dinar',
-  neighbours: 'SY,SA,IR,JO,TR,KW',
-  flag: '🇮🇶'
-}, {
-  code: 'IR',
-  name: 'Iran',
-  capital: 'Tehran',
-  areaSqKms: '1648000',
-  population: '81800269',
-  currencyCode: 'IRR',
-  currencyName: 'Rial',
-  neighbours: 'TM,AF,IQ,AM,PK,AZ,TR',
-  flag: '🇮🇷'
-}, {
-  code: 'IS',
-  name: 'Iceland',
-  capital: 'Reykjavik',
-  areaSqKms: '103000',
-  population: '353574',
-  currencyCode: 'ISK',
-  currencyName: 'Krona',
-  neighbours: '',
-  flag: '🇮🇸'
-}, {
-  code: 'IT',
-  name: 'Italy',
-  capital: 'Rome',
-  areaSqKms: '301230',
-  population: '60431283',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'CH,VA,SI,SM,FR,AT',
-  flag: '🇮🇹'
-}, {
-  code: 'JE',
-  name: 'Jersey',
-  capital: 'Saint Helier',
-  areaSqKms: '116',
-  population: '90812',
-  currencyCode: 'GBP',
-  currencyName: 'Pound',
-  neighbours: '',
-  flag: '🇯🇪'
-}, {
-  code: 'JM',
-  name: 'Jamaica',
-  capital: 'Kingston',
-  areaSqKms: '10991',
-  population: '2934855',
-  currencyCode: 'JMD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇯🇲'
-}, {
-  code: 'JO',
-  name: 'Jordan',
-  capital: 'Amman',
-  areaSqKms: '92300',
-  population: '9956011',
-  currencyCode: 'JOD',
-  currencyName: 'Dinar',
-  neighbours: 'SY,SA,IQ,IL,PS',
-  flag: '🇯🇴'
-}, {
-  code: 'JP',
-  name: 'Japan',
-  capital: 'Tokyo',
-  areaSqKms: '377835',
-  population: '126529100',
-  currencyCode: 'JPY',
-  currencyName: 'Yen',
-  neighbours: '',
-  flag: '🇯🇵'
-}, {
-  code: 'KE',
-  name: 'Kenya',
-  capital: 'Nairobi',
-  areaSqKms: '582650',
-  population: '51393010',
-  currencyCode: 'KES',
-  currencyName: 'Shilling',
-  neighbours: 'ET,TZ,SS,SO,UG',
-  flag: '🇰🇪'
-}, {
-  code: 'KG',
-  name: 'Kyrgyzstan',
-  capital: 'Bishkek',
-  areaSqKms: '198500',
-  population: '6315800',
-  currencyCode: 'KGS',
-  currencyName: 'Som',
-  neighbours: 'CN,TJ,UZ,KZ',
-  flag: '🇰🇬'
-}, {
-  code: 'KH',
-  name: 'Cambodia',
-  capital: 'Phnom Penh',
-  areaSqKms: '181040',
-  population: '16249798',
-  currencyCode: 'KHR',
-  currencyName: 'Riels',
-  neighbours: 'LA,TH,VN',
-  flag: '🇰🇭'
-}, {
-  code: 'KI',
-  name: 'Kiribati',
-  capital: 'Tarawa',
-  areaSqKms: '811',
-  population: '115847',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇰🇮'
-}, {
-  code: 'KM',
-  name: 'Comoros',
-  capital: 'Moroni',
-  areaSqKms: '2170',
-  population: '832322',
-  currencyCode: 'KMF',
-  currencyName: 'Franc',
-  neighbours: '',
-  flag: '🇰🇲'
-}, {
-  code: 'KN',
-  name: 'Saint Kitts and Nevis',
-  capital: 'Basseterre',
-  areaSqKms: '261',
-  population: '52441',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇰🇳'
-}, {
-  code: 'KP',
-  name: 'North Korea',
-  capital: 'Pyongyang',
-  areaSqKms: '120540',
-  population: '25549819',
-  currencyCode: 'KPW',
-  currencyName: 'Won',
-  neighbours: 'CN,KR,RU',
-  flag: '🇰🇵'
-}, {
-  code: 'KR',
-  name: 'South Korea',
-  capital: 'Seoul',
-  areaSqKms: '98480',
-  population: '51635256',
-  currencyCode: 'KRW',
-  currencyName: 'Won',
-  neighbours: 'KP',
-  flag: '🇰🇷'
-}, {
-  code: 'XK',
-  name: 'Kosovo',
-  capital: 'Pristina',
-  areaSqKms: '10908',
-  population: '1845300',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'RS,AL,MK,ME',
-  flag: '🇽🇰'
-}, {
-  code: 'KW',
-  name: 'Kuwait',
-  capital: 'Kuwait City',
-  areaSqKms: '17820',
-  population: '4137309',
-  currencyCode: 'KWD',
-  currencyName: 'Dinar',
-  neighbours: 'SA,IQ',
-  flag: '🇰🇼'
-}, {
-  code: 'KY',
-  name: 'Cayman Islands',
-  capital: 'George Town',
-  areaSqKms: '262',
-  population: '64174',
-  currencyCode: 'KYD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇰🇾'
-}, {
-  code: 'KZ',
-  name: 'Kazakhstan',
-  capital: 'Nur-Sultan',
-  areaSqKms: '2717300',
-  population: '18276499',
-  currencyCode: 'KZT',
-  currencyName: 'Tenge',
-  neighbours: 'TM,CN,KG,UZ,RU',
-  flag: '🇰🇿'
-}, {
-  code: 'LA',
-  name: 'Laos',
-  capital: 'Vientiane',
-  areaSqKms: '236800',
-  population: '7061507',
-  currencyCode: 'LAK',
-  currencyName: 'Kip',
-  neighbours: 'CN,MM,KH,TH,VN',
-  flag: '🇱🇦'
-}, {
-  code: 'LB',
-  name: 'Lebanon',
-  capital: 'Beirut',
-  areaSqKms: '10400',
-  population: '6848925',
-  currencyCode: 'LBP',
-  currencyName: 'Pound',
-  neighbours: 'SY,IL',
-  flag: '🇱🇧'
-}, {
-  code: 'LC',
-  name: 'Saint Lucia',
-  capital: 'Castries',
-  areaSqKms: '616',
-  population: '181889',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇱🇨'
-}, {
-  code: 'LI',
-  name: 'Liechtenstein',
-  capital: 'Vaduz',
-  areaSqKms: '160',
-  population: '37910',
-  currencyCode: 'CHF',
-  currencyName: 'Franc',
-  neighbours: 'CH,AT',
-  flag: '🇱🇮'
-}, {
-  code: 'LK',
-  name: 'Sri Lanka',
-  capital: 'Colombo',
-  areaSqKms: '65610',
-  population: '21670000',
-  currencyCode: 'LKR',
-  currencyName: 'Rupee',
-  neighbours: '',
-  flag: '🇱🇰'
-}, {
-  code: 'LR',
-  name: 'Liberia',
-  capital: 'Monrovia',
-  areaSqKms: '111370',
-  population: '4818977',
-  currencyCode: 'LRD',
-  currencyName: 'Dollar',
-  neighbours: 'SL,CI,GN',
-  flag: '🇱🇷'
-}, {
-  code: 'LS',
-  name: 'Lesotho',
-  capital: 'Maseru',
-  areaSqKms: '30355',
-  population: '2108132',
-  currencyCode: 'LSL',
-  currencyName: 'Loti',
-  neighbours: 'ZA',
-  flag: '🇱🇸'
-}, {
-  code: 'LT',
-  name: 'Lithuania',
-  capital: 'Vilnius',
-  areaSqKms: '65200',
-  population: '2789533',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'PL,BY,RU,LV',
-  flag: '🇱🇹'
-}, {
-  code: 'LU',
-  name: 'Luxembourg',
-  capital: 'Luxembourg',
-  areaSqKms: '2586',
-  population: '607728',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'DE,BE,FR',
-  flag: '🇱🇺'
-}, {
-  code: 'LV',
-  name: 'Latvia',
-  capital: 'Riga',
-  areaSqKms: '64589',
-  population: '1926542',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'LT,EE,BY,RU',
-  flag: '🇱🇻'
-}, {
-  code: 'LY',
-  name: 'Libya',
-  capital: 'Tripoli',
-  areaSqKms: '1759540',
-  population: '6678567',
-  currencyCode: 'LYD',
-  currencyName: 'Dinar',
-  neighbours: 'TD,NE,DZ,SD,TN,EG',
-  flag: '🇱🇾'
-}, {
-  code: 'MA',
-  name: 'Morocco',
-  capital: 'Rabat',
-  areaSqKms: '446550',
-  population: '36029138',
-  currencyCode: 'MAD',
-  currencyName: 'Dirham',
-  neighbours: 'DZ,EH,ES',
-  flag: '🇲🇦'
-}, {
-  code: 'MC',
-  name: 'Monaco',
-  capital: 'Monaco',
-  areaSqKms: '1.95',
-  population: '38682',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'FR',
-  flag: '🇲🇨'
-}, {
-  code: 'MD',
-  name: 'Moldova',
-  capital: 'Chisinau',
-  areaSqKms: '33843',
-  population: '3545883',
-  currencyCode: 'MDL',
-  currencyName: 'Leu',
-  neighbours: 'RO,UA',
-  flag: '🇲🇩'
-}, {
-  code: 'ME',
-  name: 'Montenegro',
-  capital: 'Podgorica',
-  areaSqKms: '14026',
-  population: '622345',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'AL,HR,BA,RS,XK',
-  flag: '🇲🇪'
-}, {
-  code: 'MF',
-  name: 'Saint Martin',
-  capital: 'Marigot',
-  areaSqKms: '53',
-  population: '37264',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'SX',
-  flag: '🇲🇫'
-}, {
-  code: 'MG',
-  name: 'Madagascar',
-  capital: 'Antananarivo',
-  areaSqKms: '587040',
-  population: '26262368',
-  currencyCode: 'MGA',
-  currencyName: 'Ariary',
-  neighbours: '',
-  flag: '🇲🇬'
-}, {
-  code: 'MH',
-  name: 'Marshall Islands',
-  capital: 'Majuro',
-  areaSqKms: '181.3',
-  population: '58413',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇲🇭'
-}, {
-  code: 'MK',
-  name: 'North Macedonia',
-  capital: 'Skopje',
-  areaSqKms: '25333',
-  population: '2082958',
-  currencyCode: 'MKD',
-  currencyName: 'Denar',
-  neighbours: 'AL,GR,BG,RS,XK',
-  flag: '🇲🇰'
-}, {
-  code: 'ML',
-  name: 'Mali',
-  capital: 'Bamako',
-  areaSqKms: '1240000',
-  population: '19077690',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'SN,NE,DZ,CI,GN,MR,BF',
-  flag: '🇲🇱'
-}, {
-  code: 'MM',
-  name: 'Myanmar',
-  capital: 'Nay Pyi Taw',
-  areaSqKms: '678500',
-  population: '53708395',
-  currencyCode: 'MMK',
-  currencyName: 'Kyat',
-  neighbours: 'CN,LA,TH,BD,IN',
-  flag: '🇲🇲'
-}, {
-  code: 'MN',
-  name: 'Mongolia',
-  capital: 'Ulaanbaatar',
-  areaSqKms: '1565000',
-  population: '3170208',
-  currencyCode: 'MNT',
-  currencyName: 'Tugrik',
-  neighbours: 'CN,RU',
-  flag: '🇲🇳'
-}, {
-  code: 'MO',
-  name: 'Macao',
-  capital: 'Macao',
-  areaSqKms: '254',
-  population: '631636',
-  currencyCode: 'MOP',
-  currencyName: 'Pataca',
-  neighbours: '',
-  flag: '🇲🇴'
-}, {
-  code: 'MP',
-  name: 'Northern Mariana Islands',
-  capital: 'Saipan',
-  areaSqKms: '477',
-  population: '56882',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇲🇵'
-}, {
-  code: 'MQ',
-  name: 'Martinique',
-  capital: 'Fort-de-France',
-  areaSqKms: '1100',
-  population: '432900',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇲🇶'
-}, {
-  code: 'MR',
-  name: 'Mauritania',
-  capital: 'Nouakchott',
-  areaSqKms: '1030700',
-  population: '4403319',
-  currencyCode: 'MRU',
-  currencyName: 'Ouguiya',
-  neighbours: 'SN,DZ,EH,ML',
-  flag: '🇲🇷'
-}, {
-  code: 'MS',
-  name: 'Montserrat',
-  capital: 'Plymouth',
-  areaSqKms: '102',
-  population: '9341',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇲🇸'
-}, {
-  code: 'MT',
-  name: 'Malta',
-  capital: 'Valletta',
-  areaSqKms: '316',
-  population: '483530',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇲🇹'
-}, {
-  code: 'MU',
-  name: 'Mauritius',
-  capital: 'Port Louis',
-  areaSqKms: '2040',
-  population: '1265303',
-  currencyCode: 'MUR',
-  currencyName: 'Rupee',
-  neighbours: '',
-  flag: '🇲🇺'
-}, {
-  code: 'MV',
-  name: 'Maldives',
-  capital: 'Male',
-  areaSqKms: '300',
-  population: '515696',
-  currencyCode: 'MVR',
-  currencyName: 'Rufiyaa',
-  neighbours: '',
-  flag: '🇲🇻'
-}, {
-  code: 'MW',
-  name: 'Malawi',
-  capital: 'Lilongwe',
-  areaSqKms: '118480',
-  population: '17563749',
-  currencyCode: 'MWK',
-  currencyName: 'Kwacha',
-  neighbours: 'TZ,MZ,ZM',
-  flag: '🇲🇼'
-}, {
-  code: 'MX',
-  name: 'Mexico',
-  capital: 'Mexico City',
-  areaSqKms: '1972550',
-  population: '126190788',
-  currencyCode: 'MXN',
-  currencyName: 'Peso',
-  neighbours: 'GT,US,BZ',
-  flag: '🇲🇽'
-}, {
-  code: 'MY',
-  name: 'Malaysia',
-  capital: 'Kuala Lumpur',
-  areaSqKms: '329750',
-  population: '31528585',
-  currencyCode: 'MYR',
-  currencyName: 'Ringgit',
-  neighbours: 'BN,TH,ID',
-  flag: '🇲🇾'
-}, {
-  code: 'MZ',
-  name: 'Mozambique',
-  capital: 'Maputo',
-  areaSqKms: '801590',
-  population: '29495962',
-  currencyCode: 'MZN',
-  currencyName: 'Metical',
-  neighbours: 'ZW,TZ,SZ,ZA,ZM,MW',
-  flag: '🇲🇿'
-}, {
-  code: 'NA',
-  name: 'Namibia',
-  capital: 'Windhoek',
-  areaSqKms: '825418',
-  population: '2448255',
-  currencyCode: 'NAD',
-  currencyName: 'Dollar',
-  neighbours: 'ZA,BW,ZM,AO',
-  flag: '🇳🇦'
-}, {
-  code: 'NC',
-  name: 'New Caledonia',
-  capital: 'Noumea',
-  areaSqKms: '19060',
-  population: '284060',
-  currencyCode: 'XPF',
-  currencyName: 'Franc',
-  neighbours: '',
-  flag: '🇳🇨'
-}, {
-  code: 'NE',
-  name: 'Niger',
-  capital: 'Niamey',
-  areaSqKms: '1267000',
-  population: '22442948',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'TD,BJ,DZ,LY,BF,NG,ML',
-  flag: '🇳🇪'
-}, {
-  code: 'NF',
-  name: 'Norfolk Island',
-  capital: 'Kingston',
-  areaSqKms: '34.6',
-  population: '1828',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇳🇫'
-}, {
-  code: 'NG',
-  name: 'Nigeria',
-  capital: 'Abuja',
-  areaSqKms: '923768',
-  population: '195874740',
-  currencyCode: 'NGN',
-  currencyName: 'Naira',
-  neighbours: 'TD,NE,BJ,CM',
-  flag: '🇳🇬'
-}, {
-  code: 'NI',
-  name: 'Nicaragua',
-  capital: 'Managua',
-  areaSqKms: '129494',
-  population: '6465513',
-  currencyCode: 'NIO',
-  currencyName: 'Cordoba',
-  neighbours: 'CR,HN',
-  flag: '🇳🇮'
-}, {
-  code: 'NL',
-  name: 'Netherlands',
-  capital: 'Amsterdam',
-  areaSqKms: '41526',
-  population: '17231017',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'DE,BE',
-  flag: '🇳🇱'
-}, {
-  code: 'NO',
-  name: 'Norway',
-  capital: 'Oslo',
-  areaSqKms: '324220',
-  population: '5314336',
-  currencyCode: 'NOK',
-  currencyName: 'Krone',
-  neighbours: 'FI,RU,SE',
-  flag: '🇳🇴'
-}, {
-  code: 'NP',
-  name: 'Nepal',
-  capital: 'Kathmandu',
-  areaSqKms: '140800',
-  population: '28087871',
-  currencyCode: 'NPR',
-  currencyName: 'Rupee',
-  neighbours: 'CN,IN',
-  flag: '🇳🇵'
-}, {
-  code: 'NR',
-  name: 'Nauru',
-  capital: 'Yaren',
-  areaSqKms: '21',
-  population: '12704',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇳🇷'
-}, {
-  code: 'NU',
-  name: 'Niue',
-  capital: 'Alofi',
-  areaSqKms: '260',
-  population: '2166',
-  currencyCode: 'NZD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇳🇺'
-}, {
-  code: 'NZ',
-  name: 'New Zealand',
-  capital: 'Wellington',
-  areaSqKms: '268680',
-  population: '4885500',
-  currencyCode: 'NZD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇳🇿'
-}, {
-  code: 'OM',
-  name: 'Oman',
-  capital: 'Muscat',
-  areaSqKms: '212460',
-  population: '4829483',
-  currencyCode: 'OMR',
-  currencyName: 'Rial',
-  neighbours: 'SA,YE,AE',
-  flag: '🇴🇲'
-}, {
-  code: 'PA',
-  name: 'Panama',
-  capital: 'Panama City',
-  areaSqKms: '78200',
-  population: '4176873',
-  currencyCode: 'PAB',
-  currencyName: 'Balboa',
-  neighbours: 'CR,CO',
-  flag: '🇵🇦'
-}, {
-  code: 'PE',
-  name: 'Peru',
-  capital: 'Lima',
-  areaSqKms: '1285220',
-  population: '31989256',
-  currencyCode: 'PEN',
-  currencyName: 'Sol',
-  neighbours: 'EC,CL,BO,BR,CO',
-  flag: '🇵🇪'
-}, {
-  code: 'PF',
-  name: 'French Polynesia',
-  capital: 'Papeete',
-  areaSqKms: '4167',
-  population: '277679',
-  currencyCode: 'XPF',
-  currencyName: 'Franc',
-  neighbours: '',
-  flag: '🇵🇫'
-}, {
-  code: 'PG',
-  name: 'Papua New Guinea',
-  capital: 'Port Moresby',
-  areaSqKms: '462840',
-  population: '8606316',
-  currencyCode: 'PGK',
-  currencyName: 'Kina',
-  neighbours: 'ID',
-  flag: '🇵🇬'
-}, {
-  code: 'PH',
-  name: 'Philippines',
-  capital: 'Manila',
-  areaSqKms: '300000',
-  population: '106651922',
-  currencyCode: 'PHP',
-  currencyName: 'Peso',
-  neighbours: '',
-  flag: '🇵🇭'
-}, {
-  code: 'PK',
-  name: 'Pakistan',
-  capital: 'Islamabad',
-  areaSqKms: '803940',
-  population: '212215030',
-  currencyCode: 'PKR',
-  currencyName: 'Rupee',
-  neighbours: 'CN,AF,IR,IN',
-  flag: '🇵🇰'
-}, {
-  code: 'PL',
-  name: 'Poland',
-  capital: 'Warsaw',
-  areaSqKms: '312685',
-  population: '37978548',
-  currencyCode: 'PLN',
-  currencyName: 'Zloty',
-  neighbours: 'DE,LT,SK,CZ,BY,UA,RU',
-  flag: '🇵🇱'
-}, {
-  code: 'PM',
-  name: 'Saint Pierre and Miquelon',
-  capital: 'Saint-Pierre',
-  areaSqKms: '242',
-  population: '7012',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇵🇲'
-}, {
-  code: 'PN',
-  name: 'Pitcairn',
-  capital: 'Adamstown',
-  areaSqKms: '47',
-  population: '46',
-  currencyCode: 'NZD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇵🇳'
-}, {
-  code: 'PR',
-  name: 'Puerto Rico',
-  capital: 'San Juan',
-  areaSqKms: '9104',
-  population: '3195153',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇵🇷'
-}, {
-  code: 'PS',
-  name: 'Palestinian Territory',
-  capital: 'East Jerusalem',
-  areaSqKms: '5970',
-  population: '4569087',
-  currencyCode: 'ILS',
-  currencyName: 'Shekel',
-  neighbours: 'JO,IL,EG',
-  flag: '🇵🇸'
-}, {
-  code: 'PT',
-  name: 'Portugal',
-  capital: 'Lisbon',
-  areaSqKms: '92391',
-  population: '10281762',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'ES',
-  flag: '🇵🇹'
-}, {
-  code: 'PW',
-  name: 'Palau',
-  capital: 'Melekeok',
-  areaSqKms: '458',
-  population: '17907',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇵🇼'
-}, {
-  code: 'PY',
-  name: 'Paraguay',
-  capital: 'Asuncion',
-  areaSqKms: '406750',
-  population: '6956071',
-  currencyCode: 'PYG',
-  currencyName: 'Guarani',
-  neighbours: 'BO,BR,AR',
-  flag: '🇵🇾'
-}, {
-  code: 'QA',
-  name: 'Qatar',
-  capital: 'Doha',
-  areaSqKms: '11437',
-  population: '2781677',
-  currencyCode: 'QAR',
-  currencyName: 'Rial',
-  neighbours: 'SA',
-  flag: '🇶🇦'
-}, {
-  code: 'RE',
-  name: 'Reunion',
-  capital: 'Saint-Denis',
-  areaSqKms: '2517',
-  population: '776948',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇷🇪'
-}, {
-  code: 'RO',
-  name: 'Romania',
-  capital: 'Bucharest',
-  areaSqKms: '237500',
-  population: '19473936',
-  currencyCode: 'RON',
-  currencyName: 'Leu',
-  neighbours: 'MD,HU,UA,BG,RS',
-  flag: '🇷🇴'
-}, {
-  code: 'RS',
-  name: 'Serbia',
-  capital: 'Belgrade',
-  areaSqKms: '88361',
-  population: '6982084',
-  currencyCode: 'RSD',
-  currencyName: 'Dinar',
-  neighbours: 'AL,HU,MK,RO,HR,BA,BG,ME,XK',
-  flag: '🇷🇸'
-}, {
-  code: 'RU',
-  name: 'Russia',
-  capital: 'Moscow',
-  areaSqKms: '17100000',
-  population: '144478050',
-  currencyCode: 'RUB',
-  currencyName: 'Ruble',
-  neighbours: 'GE,CN,BY,UA,KZ,LV,PL,EE,LT,FI,MN,NO,AZ,KP',
-  flag: '🇷🇺'
-}, {
-  code: 'RW',
-  name: 'Rwanda',
-  capital: 'Kigali',
-  areaSqKms: '26338',
-  population: '12301939',
-  currencyCode: 'RWF',
-  currencyName: 'Franc',
-  neighbours: 'TZ,CD,BI,UG',
-  flag: '🇷🇼'
-}, {
-  code: 'SA',
-  name: 'Saudi Arabia',
-  capital: 'Riyadh',
-  areaSqKms: '1960582',
-  population: '33699947',
-  currencyCode: 'SAR',
-  currencyName: 'Rial',
-  neighbours: 'QA,OM,IQ,YE,JO,AE,KW',
-  flag: '🇸🇦'
-}, {
-  code: 'SB',
-  name: 'Solomon Islands',
-  capital: 'Honiara',
-  areaSqKms: '28450',
-  population: '652858',
-  currencyCode: 'SBD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇸🇧'
-}, {
-  code: 'SC',
-  name: 'Seychelles',
-  capital: 'Victoria',
-  areaSqKms: '455',
-  population: '96762',
-  currencyCode: 'SCR',
-  currencyName: 'Rupee',
-  neighbours: '',
-  flag: '🇸🇨'
-}, {
-  code: 'SD',
-  name: 'Sudan',
-  capital: 'Khartoum',
-  areaSqKms: '1861484',
-  population: '41801533',
-  currencyCode: 'SDG',
-  currencyName: 'Pound',
-  neighbours: 'SS,TD,EG,ET,ER,LY,CF',
-  flag: '🇸🇩'
-}, {
-  code: 'SS',
-  name: 'South Sudan',
-  capital: 'Juba',
-  areaSqKms: '644329',
-  population: '8260490',
-  currencyCode: 'SSP',
-  currencyName: 'Pound',
-  neighbours: 'CD,CF,ET,KE,SD,UG',
-  flag: '🇸🇸'
-}, {
-  code: 'SE',
-  name: 'Sweden',
-  capital: 'Stockholm',
-  areaSqKms: '449964',
-  population: '10183175',
-  currencyCode: 'SEK',
-  currencyName: 'Krona',
-  neighbours: 'NO,FI',
-  flag: '🇸🇪'
-}, {
-  code: 'SG',
-  name: 'Singapore',
-  capital: 'Singapore',
-  areaSqKms: '692.7',
-  population: '5638676',
-  currencyCode: 'SGD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇸🇬'
-}, {
-  code: 'SH',
-  name: 'Saint Helena',
-  capital: 'Jamestown',
-  areaSqKms: '410',
-  population: '7460',
-  currencyCode: 'SHP',
-  currencyName: 'Pound',
-  neighbours: '',
-  flag: '🇸🇭'
-}, {
-  code: 'SI',
-  name: 'Slovenia',
-  capital: 'Ljubljana',
-  areaSqKms: '20273',
-  population: '2067372',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'HU,IT,HR,AT',
-  flag: '🇸🇮'
-}, {
-  code: 'SJ',
-  name: 'Svalbard and Jan Mayen',
-  capital: 'Longyearbyen',
-  areaSqKms: '62049',
-  population: '2550',
-  currencyCode: 'NOK',
-  currencyName: 'Krone',
-  neighbours: '',
-  flag: '🇸🇯'
-}, {
-  code: 'SK',
-  name: 'Slovakia',
-  capital: 'Bratislava',
-  areaSqKms: '48845',
-  population: '5447011',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'PL,HU,CZ,UA,AT',
-  flag: '🇸🇰'
-}, {
-  code: 'SL',
-  name: 'Sierra Leone',
-  capital: 'Freetown',
-  areaSqKms: '71740',
-  population: '7650154',
-  currencyCode: 'SLL',
-  currencyName: 'Leone',
-  neighbours: 'LR,GN',
-  flag: '🇸🇱'
-}, {
-  code: 'SM',
-  name: 'San Marino',
-  capital: 'San Marino',
-  areaSqKms: '61.2',
-  population: '33785',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'IT',
-  flag: '🇸🇲'
-}, {
-  code: 'SN',
-  name: 'Senegal',
-  capital: 'Dakar',
-  areaSqKms: '196190',
-  population: '15854360',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'GN,MR,GW,GM,ML',
-  flag: '🇸🇳'
-}, {
-  code: 'SO',
-  name: 'Somalia',
-  capital: 'Mogadishu',
-  areaSqKms: '637657',
-  population: '15008154',
-  currencyCode: 'SOS',
-  currencyName: 'Shilling',
-  neighbours: 'ET,KE,DJ',
-  flag: '🇸🇴'
-}, {
-  code: 'SR',
-  name: 'Suriname',
-  capital: 'Paramaribo',
-  areaSqKms: '163270',
-  population: '575991',
-  currencyCode: 'SRD',
-  currencyName: 'Dollar',
-  neighbours: 'GY,BR,GF',
-  flag: '🇸🇷'
-}, {
-  code: 'ST',
-  name: 'Sao Tome and Principe',
-  capital: 'Sao Tome',
-  areaSqKms: '1001',
-  population: '197700',
-  currencyCode: 'STN',
-  currencyName: 'Dobra',
-  neighbours: '',
-  flag: '🇸🇹'
-}, {
-  code: 'SV',
-  name: 'El Salvador',
-  capital: 'San Salvador',
-  areaSqKms: '21040',
-  population: '6420744',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: 'GT,HN',
-  flag: '🇸🇻'
-}, {
-  code: 'SX',
-  name: 'Sint Maarten',
-  capital: 'Philipsburg',
-  areaSqKms: '21',
-  population: '40654',
-  currencyCode: 'ANG',
-  currencyName: 'Guilder',
-  neighbours: 'MF',
-  flag: '🇸🇽'
-}, {
-  code: 'SY',
-  name: 'Syria',
-  capital: 'Damascus',
-  areaSqKms: '185180',
-  population: '16906283',
-  currencyCode: 'SYP',
-  currencyName: 'Pound',
-  neighbours: 'IQ,JO,IL,TR,LB',
-  flag: '🇸🇾'
-}, {
-  code: 'SZ',
-  name: 'Eswatini',
-  capital: 'Mbabane',
-  areaSqKms: '17363',
-  population: '1136191',
-  currencyCode: 'SZL',
-  currencyName: 'Lilangeni',
-  neighbours: 'ZA,MZ',
-  flag: '🇸🇿'
-}, {
-  code: 'TC',
-  name: 'Turks and Caicos Islands',
-  capital: 'Cockburn Town',
-  areaSqKms: '430',
-  population: '37665',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇹🇨'
-}, {
-  code: 'TD',
-  name: 'Chad',
-  capital: "N'Djamena",
-  areaSqKms: '1284000',
-  population: '15477751',
-  currencyCode: 'XAF',
-  currencyName: 'Franc',
-  neighbours: 'NE,LY,CF,SD,CM,NG',
-  flag: '🇹🇩'
-}, {
-  code: 'TF',
-  name: 'French Southern Territories',
-  capital: 'Port-aux-Francais',
-  areaSqKms: '7829',
-  population: '140',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇹🇫'
-}, {
-  code: 'TG',
-  name: 'Togo',
-  capital: 'Lome',
-  areaSqKms: '56785',
-  population: '7889094',
-  currencyCode: 'XOF',
-  currencyName: 'Franc',
-  neighbours: 'BJ,GH,BF',
-  flag: '🇹🇬'
-}, {
-  code: 'TH',
-  name: 'Thailand',
-  capital: 'Bangkok',
-  areaSqKms: '514000',
-  population: '69428524',
-  currencyCode: 'THB',
-  currencyName: 'Baht',
-  neighbours: 'LA,MM,KH,MY',
-  flag: '🇹🇭'
-}, {
-  code: 'TJ',
-  name: 'Tajikistan',
-  capital: 'Dushanbe',
-  areaSqKms: '143100',
-  population: '9100837',
-  currencyCode: 'TJS',
-  currencyName: 'Somoni',
-  neighbours: 'CN,AF,KG,UZ',
-  flag: '🇹🇯'
-}, {
-  code: 'TK',
-  name: 'Tokelau',
-  capital: '',
-  areaSqKms: '10',
-  population: '1466',
-  currencyCode: 'NZD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇹🇰'
-}, {
-  code: 'TL',
-  name: 'Timor Leste',
-  capital: 'Dili',
-  areaSqKms: '15007',
-  population: '1267972',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: 'ID',
-  flag: '🇹🇱'
-}, {
-  code: 'TM',
-  name: 'Turkmenistan',
-  capital: 'Ashgabat',
-  areaSqKms: '488100',
-  population: '5850908',
-  currencyCode: 'TMT',
-  currencyName: 'Manat',
-  neighbours: 'AF,IR,UZ,KZ',
-  flag: '🇹🇲'
-}, {
-  code: 'TN',
-  name: 'Tunisia',
-  capital: 'Tunis',
-  areaSqKms: '163610',
-  population: '11565204',
-  currencyCode: 'TND',
-  currencyName: 'Dinar',
-  neighbours: 'DZ,LY',
-  flag: '🇹🇳'
-}, {
-  code: 'TO',
-  name: 'Tonga',
-  capital: "Nuku'alofa",
-  areaSqKms: '748',
-  population: '103197',
-  currencyCode: 'TOP',
-  currencyName: "Pa'anga",
-  neighbours: '',
-  flag: '🇹🇴'
-}, {
-  code: 'TR',
-  name: 'Turkey',
-  capital: 'Ankara',
-  areaSqKms: '780580',
-  population: '82319724',
-  currencyCode: 'TRY',
-  currencyName: 'Lira',
-  neighbours: 'SY,GE,IQ,IR,GR,AM,AZ,BG',
-  flag: '🇹🇷'
-}, {
-  code: 'TT',
-  name: 'Trinidad and Tobago',
-  capital: 'Port of Spain',
-  areaSqKms: '5128',
-  population: '1389858',
-  currencyCode: 'TTD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇹🇹'
-}, {
-  code: 'TV',
-  name: 'Tuvalu',
-  capital: 'Funafuti',
-  areaSqKms: '26',
-  population: '11508',
-  currencyCode: 'AUD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇹🇻'
-}, {
-  code: 'TW',
-  name: 'Taiwan',
-  capital: 'Taipei',
-  areaSqKms: '35980',
-  population: '22894384',
-  currencyCode: 'TWD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇹🇼'
-}, {
-  code: 'TZ',
-  name: 'Tanzania',
-  capital: 'Dodoma',
-  areaSqKms: '945087',
-  population: '56318348',
-  currencyCode: 'TZS',
-  currencyName: 'Shilling',
-  neighbours: 'MZ,KE,CD,RW,ZM,BI,UG,MW',
-  flag: '🇹🇿'
-}, {
-  code: 'UA',
-  name: 'Ukraine',
-  capital: 'Kyiv',
-  areaSqKms: '603700',
-  population: '44622516',
-  currencyCode: 'UAH',
-  currencyName: 'Hryvnia',
-  neighbours: 'PL,MD,HU,SK,BY,RO,RU',
-  flag: '🇺🇦'
-}, {
-  code: 'UG',
-  name: 'Uganda',
-  capital: 'Kampala',
-  areaSqKms: '236040',
-  population: '42723139',
-  currencyCode: 'UGX',
-  currencyName: 'Shilling',
-  neighbours: 'TZ,KE,SS,CD,RW',
-  flag: '🇺🇬'
-}, {
-  code: 'UM',
-  name: 'United States Minor Outlying Islands',
-  capital: '',
-  areaSqKms: '0',
-  population: '0',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇺🇲'
-}, {
-  code: 'US',
-  name: 'United States',
-  capital: 'Washington',
-  areaSqKms: '9629091',
-  population: '327167434',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: 'CA,MX,CU',
-  flag: '🇺🇸'
-}, {
-  code: 'UY',
-  name: 'Uruguay',
-  capital: 'Montevideo',
-  areaSqKms: '176220',
-  population: '3449299',
-  currencyCode: 'UYU',
-  currencyName: 'Peso',
-  neighbours: 'BR,AR',
-  flag: '🇺🇾'
-}, {
-  code: 'UZ',
-  name: 'Uzbekistan',
-  capital: 'Tashkent',
-  areaSqKms: '447400',
-  population: '32955400',
-  currencyCode: 'UZS',
-  currencyName: 'Som',
-  neighbours: 'TM,AF,KG,TJ,KZ',
-  flag: '🇺🇿'
-}, {
-  code: 'VA',
-  name: 'Vatican',
-  capital: 'Vatican City',
-  areaSqKms: '0.44',
-  population: '921',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: 'IT',
-  flag: '🇻🇦'
-}, {
-  code: 'VC',
-  name: 'Saint Vincent and the Grenadines',
-  capital: 'Kingstown',
-  areaSqKms: '389',
-  population: '110211',
-  currencyCode: 'XCD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇻🇨'
-}, {
-  code: 'VE',
-  name: 'Venezuela',
-  capital: 'Caracas',
-  areaSqKms: '912050',
-  population: '28870195',
-  currencyCode: 'VES',
-  currencyName: 'Bolivar Soberano',
-  neighbours: 'GY,BR,CO',
-  flag: '🇻🇪'
-}, {
-  code: 'VG',
-  name: 'British Virgin Islands',
-  capital: 'Road Town',
-  areaSqKms: '153',
-  population: '29802',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇻🇬'
-}, {
-  code: 'VI',
-  name: 'U.S. Virgin Islands',
-  capital: 'Charlotte Amalie',
-  areaSqKms: '352',
-  population: '106977',
-  currencyCode: 'USD',
-  currencyName: 'Dollar',
-  neighbours: '',
-  flag: '🇻🇮'
-}, {
-  code: 'VN',
-  name: 'Vietnam',
-  capital: 'Hanoi',
-  areaSqKms: '329560',
-  population: '95540395',
-  currencyCode: 'VND',
-  currencyName: 'Dong',
-  neighbours: 'CN,LA,KH',
-  flag: '🇻🇳'
-}, {
-  code: 'VU',
-  name: 'Vanuatu',
-  capital: 'Port Vila',
-  areaSqKms: '12200',
-  population: '292680',
-  currencyCode: 'VUV',
-  currencyName: 'Vatu',
-  neighbours: '',
-  flag: '🇻🇺'
-}, {
-  code: 'WF',
-  name: 'Wallis and Futuna',
-  capital: 'Mata Utu',
-  areaSqKms: '274',
-  population: '16025',
-  currencyCode: 'XPF',
-  currencyName: 'Franc',
-  neighbours: '',
-  flag: '🇼🇫'
-}, {
-  code: 'WS',
-  name: 'Samoa',
-  capital: 'Apia',
-  areaSqKms: '2944',
-  population: '196130',
-  currencyCode: 'WST',
-  currencyName: 'Tala',
-  neighbours: '',
-  flag: '🇼🇸'
-}, {
-  code: 'YE',
-  name: 'Yemen',
-  capital: 'Sanaa',
-  areaSqKms: '527970',
-  population: '28498687',
-  currencyCode: 'YER',
-  currencyName: 'Rial',
-  neighbours: 'SA,OM',
-  flag: '🇾🇪'
-}, {
-  code: 'YT',
-  name: 'Mayotte',
-  capital: 'Mamoudzou',
-  areaSqKms: '374',
-  population: '159042',
-  currencyCode: 'EUR',
-  currencyName: 'Euro',
-  neighbours: '',
-  flag: '🇾🇹'
-}, {
-  code: 'ZA',
-  name: 'South Africa',
-  capital: 'Pretoria',
-  areaSqKms: '1219912',
-  population: '57779622',
-  currencyCode: 'ZAR',
-  currencyName: 'Rand',
-  neighbours: 'ZW,SZ,MZ,BW,NA,LS',
-  flag: '🇿🇦'
-}, {
-  code: 'ZM',
-  name: 'Zambia',
-  capital: 'Lusaka',
-  areaSqKms: '752614',
-  population: '17351822',
-  currencyCode: 'ZMW',
-  currencyName: 'Kwacha',
-  neighbours: 'ZW,TZ,MZ,CD,NA,MW,AO',
-  flag: '🇿🇲'
-}, {
-  code: 'ZW',
-  name: 'Zimbabwe',
-  capital: 'Harare',
-  areaSqKms: '390580',
-  population: '14439018',
-  currencyCode: 'ZWL',
-  currencyName: 'Dollar',
-  neighbours: 'ZA,MZ,BW,ZM',
-  flag: '🇿🇼'
-}]);
 
 /***/ }),
 
@@ -3621,13 +130,13 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createBrowserHistory": () => /* binding */ createBrowserHistory,
-/* harmony export */   "createHashHistory": () => /* binding */ createHashHistory,
-/* harmony export */   "createMemoryHistory": () => /* binding */ createMemoryHistory,
-/* harmony export */   "createLocation": () => /* binding */ createLocation,
-/* harmony export */   "locationsAreEqual": () => /* binding */ locationsAreEqual,
-/* harmony export */   "parsePath": () => /* binding */ parsePath,
-/* harmony export */   "createPath": () => /* binding */ createPath
+/* harmony export */   "createBrowserHistory": () => (/* binding */ createBrowserHistory),
+/* harmony export */   "createHashHistory": () => (/* binding */ createHashHistory),
+/* harmony export */   "createMemoryHistory": () => (/* binding */ createMemoryHistory),
+/* harmony export */   "createLocation": () => (/* binding */ createLocation),
+/* harmony export */   "locationsAreEqual": () => (/* binding */ locationsAreEqual),
+/* harmony export */   "parsePath": () => (/* binding */ parsePath),
+/* harmony export */   "createPath": () => (/* binding */ createPath)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var resolve_pathname__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! resolve-pathname */ "./node_modules/resolve-pathname/esm/resolve-pathname.js");
@@ -4680,7 +1189,7 @@ module.exports = hoistNonReactStatics;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
@@ -5738,7 +2247,7 @@ module.exports = ReactPropTypesSecret;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/** @license React v17.0.1
+/** @license React v17.0.2
  * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -17086,7 +13595,7 @@ function flushSyncCallbackQueueImpl() {
 }
 
 // TODO: this is special because it gets imported during build.
-var ReactVersion = '17.0.1';
+var ReactVersion = '17.0.2';
 
 var NoMode = 0;
 var StrictMode = 1; // TODO: Remove BlockingMode and ConcurrentMode by reading from the root
@@ -32050,7 +28559,7 @@ if (false) {} else {
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/** @license React v16.8.6
+/** @license React v16.13.1
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -32067,88 +28576,39 @@ if (true) {
   (function() {
 'use strict';
 
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
 var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-
 var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
 var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
 var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
 var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
 var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
 var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
 var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
 var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
 var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
 var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
 var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
 var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
 
 function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' ||
-  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
 }
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var lowPriorityWarning = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarning = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarning$1 = lowPriorityWarning;
 
 function typeOf(object) {
   if (typeof object === 'object' && object !== null) {
     var $$typeof = object.$$typeof;
+
     switch ($$typeof) {
       case REACT_ELEMENT_TYPE:
         var type = object.type;
@@ -32161,29 +28621,32 @@ function typeOf(object) {
           case REACT_STRICT_MODE_TYPE:
           case REACT_SUSPENSE_TYPE:
             return type;
+
           default:
             var $$typeofType = type && type.$$typeof;
 
             switch ($$typeofType) {
               case REACT_CONTEXT_TYPE:
               case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
               case REACT_PROVIDER_TYPE:
                 return $$typeofType;
+
               default:
                 return $$typeof;
             }
+
         }
-      case REACT_LAZY_TYPE:
-      case REACT_MEMO_TYPE:
+
       case REACT_PORTAL_TYPE:
         return $$typeof;
     }
   }
 
   return undefined;
-}
+} // AsyncMode is deprecated along with isAsyncMode
 
-// AsyncMode is deprecated along with isAsyncMode
 var AsyncMode = REACT_ASYNC_MODE_TYPE;
 var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
 var ContextConsumer = REACT_CONTEXT_TYPE;
@@ -32197,17 +28660,17 @@ var Portal = REACT_PORTAL_TYPE;
 var Profiler = REACT_PROFILER_TYPE;
 var StrictMode = REACT_STRICT_MODE_TYPE;
 var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
 
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-
-// AsyncMode should be deprecated
 function isAsyncMode(object) {
   {
     if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
     }
   }
+
   return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
 }
 function isConcurrentMode(object) {
@@ -32247,7 +28710,6 @@ function isSuspense(object) {
   return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
 
-exports.typeOf = typeOf;
 exports.AsyncMode = AsyncMode;
 exports.ConcurrentMode = ConcurrentMode;
 exports.ContextConsumer = ContextConsumer;
@@ -32261,7 +28723,6 @@ exports.Portal = Portal;
 exports.Profiler = Profiler;
 exports.StrictMode = StrictMode;
 exports.Suspense = Suspense;
-exports.isValidElementType = isValidElementType;
 exports.isAsyncMode = isAsyncMode;
 exports.isConcurrentMode = isConcurrentMode;
 exports.isContextConsumer = isContextConsumer;
@@ -32275,6 +28736,8 @@ exports.isPortal = isPortal;
 exports.isProfiler = isProfiler;
 exports.isStrictMode = isStrictMode;
 exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
   })();
 }
 
@@ -32306,24 +28769,24 @@ if (false) {} else {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MemoryRouter": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.MemoryRouter,
-/* harmony export */   "Prompt": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Prompt,
-/* harmony export */   "Redirect": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Redirect,
-/* harmony export */   "Route": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Route,
-/* harmony export */   "Router": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Router,
-/* harmony export */   "StaticRouter": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.StaticRouter,
-/* harmony export */   "Switch": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Switch,
-/* harmony export */   "generatePath": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.generatePath,
-/* harmony export */   "matchPath": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.matchPath,
-/* harmony export */   "useHistory": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useHistory,
-/* harmony export */   "useLocation": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useLocation,
-/* harmony export */   "useParams": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useParams,
-/* harmony export */   "useRouteMatch": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useRouteMatch,
-/* harmony export */   "withRouter": () => /* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.withRouter,
-/* harmony export */   "BrowserRouter": () => /* binding */ BrowserRouter,
-/* harmony export */   "HashRouter": () => /* binding */ HashRouter,
-/* harmony export */   "Link": () => /* binding */ Link,
-/* harmony export */   "NavLink": () => /* binding */ NavLink
+/* harmony export */   "MemoryRouter": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.MemoryRouter),
+/* harmony export */   "Prompt": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Prompt),
+/* harmony export */   "Redirect": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Redirect),
+/* harmony export */   "Route": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Route),
+/* harmony export */   "Router": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Router),
+/* harmony export */   "StaticRouter": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.StaticRouter),
+/* harmony export */   "Switch": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.Switch),
+/* harmony export */   "generatePath": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.generatePath),
+/* harmony export */   "matchPath": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.matchPath),
+/* harmony export */   "useHistory": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useHistory),
+/* harmony export */   "useLocation": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useLocation),
+/* harmony export */   "useParams": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useParams),
+/* harmony export */   "useRouteMatch": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.useRouteMatch),
+/* harmony export */   "withRouter": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_0__.withRouter),
+/* harmony export */   "BrowserRouter": () => (/* binding */ BrowserRouter),
+/* harmony export */   "HashRouter": () => (/* binding */ HashRouter),
+/* harmony export */   "Link": () => (/* binding */ Link),
+/* harmony export */   "NavLink": () => (/* binding */ NavLink)
 /* harmony export */ });
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
@@ -32665,22 +29128,22 @@ if (true) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MemoryRouter": () => /* binding */ MemoryRouter,
-/* harmony export */   "Prompt": () => /* binding */ Prompt,
-/* harmony export */   "Redirect": () => /* binding */ Redirect,
-/* harmony export */   "Route": () => /* binding */ Route,
-/* harmony export */   "Router": () => /* binding */ Router,
-/* harmony export */   "StaticRouter": () => /* binding */ StaticRouter,
-/* harmony export */   "Switch": () => /* binding */ Switch,
-/* harmony export */   "__HistoryContext": () => /* binding */ historyContext,
-/* harmony export */   "__RouterContext": () => /* binding */ context,
-/* harmony export */   "generatePath": () => /* binding */ generatePath,
-/* harmony export */   "matchPath": () => /* binding */ matchPath,
-/* harmony export */   "useHistory": () => /* binding */ useHistory,
-/* harmony export */   "useLocation": () => /* binding */ useLocation,
-/* harmony export */   "useParams": () => /* binding */ useParams,
-/* harmony export */   "useRouteMatch": () => /* binding */ useRouteMatch,
-/* harmony export */   "withRouter": () => /* binding */ withRouter
+/* harmony export */   "MemoryRouter": () => (/* binding */ MemoryRouter),
+/* harmony export */   "Prompt": () => (/* binding */ Prompt),
+/* harmony export */   "Redirect": () => (/* binding */ Redirect),
+/* harmony export */   "Route": () => (/* binding */ Route),
+/* harmony export */   "Router": () => (/* binding */ Router),
+/* harmony export */   "StaticRouter": () => (/* binding */ StaticRouter),
+/* harmony export */   "Switch": () => (/* binding */ Switch),
+/* harmony export */   "__HistoryContext": () => (/* binding */ historyContext),
+/* harmony export */   "__RouterContext": () => (/* binding */ context),
+/* harmony export */   "generatePath": () => (/* binding */ generatePath),
+/* harmony export */   "matchPath": () => (/* binding */ matchPath),
+/* harmony export */   "useHistory": () => (/* binding */ useHistory),
+/* harmony export */   "useLocation": () => (/* binding */ useLocation),
+/* harmony export */   "useParams": () => (/* binding */ useParams),
+/* harmony export */   "useRouteMatch": () => (/* binding */ useRouteMatch),
+/* harmony export */   "withRouter": () => (/* binding */ withRouter)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -32694,7 +29157,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! path-to-regexp */ "./node_modules/react-router/node_modules/path-to-regexp/index.js");
 /* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(path_to_regexp__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_8__);
@@ -33928,7 +30390,7 @@ function pathToRegexp (path, keys, options) {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/** @license React v17.0.1
+/** @license React v17.0.2
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -33946,7 +30408,7 @@ if (true) {
 var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
 
 // TODO: this is special because it gets imported during build.
-var ReactVersion = '17.0.1';
+var ReactVersion = '17.0.2';
 
 // ATTENTION
 // When adding new symbols to this file,
@@ -36290,7 +32752,7 @@ if (false) {} else {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function isAbsolute(pathname) {
   return pathname.charAt(0) === '/';
@@ -36378,7 +32840,7 @@ function resolvePathname(to, from) {
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/** @license React v0.20.1
+/** @license React v0.20.2
  * scheduler-tracing.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -36736,7 +33198,7 @@ exports.unstable_wrap = unstable_wrap;
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/** @license React v0.20.1
+/** @license React v0.20.2
  * scheduler.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -36752,7 +33214,7 @@ if (true) {
 'use strict';
 
 var enableSchedulerDebugging = false;
-var enableProfiling = true;
+var enableProfiling = false;
 
 var requestHostCallback;
 var requestHostTimeout;
@@ -37022,172 +33484,13 @@ function compare(a, b) {
 }
 
 // TODO: Use symbols?
-var NoPriority = 0;
 var ImmediatePriority = 1;
 var UserBlockingPriority = 2;
 var NormalPriority = 3;
 var LowPriority = 4;
 var IdlePriority = 5;
 
-var runIdCounter = 0;
-var mainThreadIdCounter = 0;
-var profilingStateSize = 4;
-var sharedProfilingBuffer =  // $FlowFixMe Flow doesn't know about SharedArrayBuffer
-typeof SharedArrayBuffer === 'function' ? new SharedArrayBuffer(profilingStateSize * Int32Array.BYTES_PER_ELEMENT) : // $FlowFixMe Flow doesn't know about ArrayBuffer
-typeof ArrayBuffer === 'function' ? new ArrayBuffer(profilingStateSize * Int32Array.BYTES_PER_ELEMENT) : null // Don't crash the init path on IE9
-;
-var profilingState =  sharedProfilingBuffer !== null ? new Int32Array(sharedProfilingBuffer) : []; // We can't read this but it helps save bytes for null checks
-
-var PRIORITY = 0;
-var CURRENT_TASK_ID = 1;
-var CURRENT_RUN_ID = 2;
-var QUEUE_SIZE = 3;
-
-{
-  profilingState[PRIORITY] = NoPriority; // This is maintained with a counter, because the size of the priority queue
-  // array might include canceled tasks.
-
-  profilingState[QUEUE_SIZE] = 0;
-  profilingState[CURRENT_TASK_ID] = 0;
-} // Bytes per element is 4
-
-
-var INITIAL_EVENT_LOG_SIZE = 131072;
-var MAX_EVENT_LOG_SIZE = 524288; // Equivalent to 2 megabytes
-
-var eventLogSize = 0;
-var eventLogBuffer = null;
-var eventLog = null;
-var eventLogIndex = 0;
-var TaskStartEvent = 1;
-var TaskCompleteEvent = 2;
-var TaskErrorEvent = 3;
-var TaskCancelEvent = 4;
-var TaskRunEvent = 5;
-var TaskYieldEvent = 6;
-var SchedulerSuspendEvent = 7;
-var SchedulerResumeEvent = 8;
-
-function logEvent(entries) {
-  if (eventLog !== null) {
-    var offset = eventLogIndex;
-    eventLogIndex += entries.length;
-
-    if (eventLogIndex + 1 > eventLogSize) {
-      eventLogSize *= 2;
-
-      if (eventLogSize > MAX_EVENT_LOG_SIZE) {
-        // Using console['error'] to evade Babel and ESLint
-        console['error']("Scheduler Profiling: Event log exceeded maximum size. Don't " + 'forget to call `stopLoggingProfilingEvents()`.');
-        stopLoggingProfilingEvents();
-        return;
-      }
-
-      var newEventLog = new Int32Array(eventLogSize * 4);
-      newEventLog.set(eventLog);
-      eventLogBuffer = newEventLog.buffer;
-      eventLog = newEventLog;
-    }
-
-    eventLog.set(entries, offset);
-  }
-}
-
-function startLoggingProfilingEvents() {
-  eventLogSize = INITIAL_EVENT_LOG_SIZE;
-  eventLogBuffer = new ArrayBuffer(eventLogSize * 4);
-  eventLog = new Int32Array(eventLogBuffer);
-  eventLogIndex = 0;
-}
-function stopLoggingProfilingEvents() {
-  var buffer = eventLogBuffer;
-  eventLogSize = 0;
-  eventLogBuffer = null;
-  eventLog = null;
-  eventLogIndex = 0;
-  return buffer;
-}
-function markTaskStart(task, ms) {
-  {
-    profilingState[QUEUE_SIZE]++;
-
-    if (eventLog !== null) {
-      // performance.now returns a float, representing milliseconds. When the
-      // event is logged, it's coerced to an int. Convert to microseconds to
-      // maintain extra degrees of precision.
-      logEvent([TaskStartEvent, ms * 1000, task.id, task.priorityLevel]);
-    }
-  }
-}
-function markTaskCompleted(task, ms) {
-  {
-    profilingState[PRIORITY] = NoPriority;
-    profilingState[CURRENT_TASK_ID] = 0;
-    profilingState[QUEUE_SIZE]--;
-
-    if (eventLog !== null) {
-      logEvent([TaskCompleteEvent, ms * 1000, task.id]);
-    }
-  }
-}
-function markTaskCanceled(task, ms) {
-  {
-    profilingState[QUEUE_SIZE]--;
-
-    if (eventLog !== null) {
-      logEvent([TaskCancelEvent, ms * 1000, task.id]);
-    }
-  }
-}
 function markTaskErrored(task, ms) {
-  {
-    profilingState[PRIORITY] = NoPriority;
-    profilingState[CURRENT_TASK_ID] = 0;
-    profilingState[QUEUE_SIZE]--;
-
-    if (eventLog !== null) {
-      logEvent([TaskErrorEvent, ms * 1000, task.id]);
-    }
-  }
-}
-function markTaskRun(task, ms) {
-  {
-    runIdCounter++;
-    profilingState[PRIORITY] = task.priorityLevel;
-    profilingState[CURRENT_TASK_ID] = task.id;
-    profilingState[CURRENT_RUN_ID] = runIdCounter;
-
-    if (eventLog !== null) {
-      logEvent([TaskRunEvent, ms * 1000, task.id, runIdCounter]);
-    }
-  }
-}
-function markTaskYield(task, ms) {
-  {
-    profilingState[PRIORITY] = NoPriority;
-    profilingState[CURRENT_TASK_ID] = 0;
-    profilingState[CURRENT_RUN_ID] = 0;
-
-    if (eventLog !== null) {
-      logEvent([TaskYieldEvent, ms * 1000, task.id, runIdCounter]);
-    }
-  }
-}
-function markSchedulerSuspended(ms) {
-  {
-    mainThreadIdCounter++;
-
-    if (eventLog !== null) {
-      logEvent([SchedulerSuspendEvent, ms * 1000, mainThreadIdCounter]);
-    }
-  }
-}
-function markSchedulerUnsuspended(ms) {
-  {
-    if (eventLog !== null) {
-      logEvent([SchedulerResumeEvent, ms * 1000, mainThreadIdCounter]);
-    }
-  }
 }
 
 /* eslint-disable no-var */
@@ -37228,11 +33531,6 @@ function advanceTimers(currentTime) {
       pop(timerQueue);
       timer.sortIndex = timer.expirationTime;
       push(taskQueue, timer);
-
-      {
-        markTaskStart(timer, currentTime);
-        timer.isQueued = true;
-      }
     } else {
       // Remaining timers are pending.
       return;
@@ -37261,9 +33559,6 @@ function handleTimeout(currentTime) {
 }
 
 function flushWork(hasTimeRemaining, initialTime) {
-  {
-    markSchedulerUnsuspended(initialTime);
-  } // We'll need a host callback the next time work is scheduled.
 
 
   isHostCallbackScheduled = false;
@@ -37298,12 +33593,6 @@ function flushWork(hasTimeRemaining, initialTime) {
     currentTask = null;
     currentPriorityLevel = previousPriorityLevel;
     isPerformingWork = false;
-
-    {
-      var _currentTime = exports.unstable_now();
-
-      markSchedulerSuspended(_currentTime);
-    }
   }
 }
 
@@ -37324,18 +33613,13 @@ function workLoop(hasTimeRemaining, initialTime) {
       currentTask.callback = null;
       currentPriorityLevel = currentTask.priorityLevel;
       var didUserCallbackTimeout = currentTask.expirationTime <= currentTime;
-      markTaskRun(currentTask, currentTime);
+
       var continuationCallback = callback(didUserCallbackTimeout);
       currentTime = exports.unstable_now();
 
       if (typeof continuationCallback === 'function') {
         currentTask.callback = continuationCallback;
-        markTaskYield(currentTask, currentTime);
       } else {
-        {
-          markTaskCompleted(currentTask, currentTime);
-          currentTask.isQueued = false;
-        }
 
         if (currentTask === peek(taskQueue)) {
           pop(taskQueue);
@@ -37480,10 +33764,6 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
     sortIndex: -1
   };
 
-  {
-    newTask.isQueued = false;
-  }
-
   if (startTime > currentTime) {
     // This is a delayed task.
     newTask.sortIndex = startTime;
@@ -37504,11 +33784,6 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
   } else {
     newTask.sortIndex = expirationTime;
     push(taskQueue, newTask);
-
-    {
-      markTaskStart(newTask, currentTime);
-      newTask.isQueued = true;
-    } // Schedule a host callback, if needed. If we're already performing work,
     // wait until the next time we yield.
 
 
@@ -37537,13 +33812,6 @@ function unstable_getFirstCallbackNode() {
 }
 
 function unstable_cancelCallback(task) {
-  {
-    if (task.isQueued) {
-      var currentTime = exports.unstable_now();
-      markTaskCanceled(task, currentTime);
-      task.isQueued = false;
-    }
-  } // Null out the callback to indicate the task has been canceled. (Can't
   // remove from the queue because you can't remove arbitrary nodes from an
   // array based heap, only the first one.)
 
@@ -37556,11 +33824,7 @@ function unstable_getCurrentPriorityLevel() {
 }
 
 var unstable_requestPaint = requestPaint;
-var unstable_Profiling =  {
-  startLoggingProfilingEvents: startLoggingProfilingEvents,
-  stopLoggingProfilingEvents: stopLoggingProfilingEvents,
-  sharedProfilingBuffer: sharedProfilingBuffer
-} ;
+var unstable_Profiling =  null;
 
 exports.unstable_IdlePriority = IdlePriority;
 exports.unstable_ImmediatePriority = ImmediatePriority;
@@ -37625,7 +33889,7 @@ if (false) {} else {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var isProduction = "development" === 'production';
 var prefix = 'Invariant failed';
@@ -37653,7 +33917,7 @@ function invariant(condition, message) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var isProduction = "development" === 'production';
 function warning(condition, message) {
@@ -37688,7 +33952,7 @@ function warning(condition, message) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function valueOf(obj) {
   return obj.valueOf ? obj.valueOf() : Object.prototype.valueOf.call(obj);
@@ -37738,8 +34002,9 @@ function valueEqual(a, b) {
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -37761,8 +34026,8 @@ function valueEqual(a, b) {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
 /******/ 		__webpack_require__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => module['default'] :
-/******/ 				() => module;
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
@@ -37794,7 +34059,7 @@ function valueEqual(a, b) {
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -37809,10 +34074,27 @@ function valueEqual(a, b) {
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	// startup
-/******/ 	// Load entry module
-/******/ 	__webpack_require__("./client/index.js");
-/******/ 	// This entry module used 'exports' so it can't be inlined
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!*************************!*\
+  !*** ./client/index.js ***!
+  \*************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./client/components/App.jsx");
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.HashRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById("app"));
+});
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=bundle.js.map
