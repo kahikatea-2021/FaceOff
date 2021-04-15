@@ -3,17 +3,13 @@
 // const connection = require('knex')(config)
 // const { ModuleFilenameHelpers } = require("webpack")
 
-const { default: celebrities } = require('../celebrities')
-const celebrityFile = require('../celebrities')
+const { default: celebrities } = require('./celebrities')
 
 function generateRandomId() {
-    console.log(celebrities.CelebrityValues.length)
+    console.log(celebrities.length)
     return Math.floor(Math.random() * 1500)
 
 }
 
-let test = generateRandomId()
 
-console.log(test)
-
-module.export = generateRandomId
+module.export = { generateRandomId }
