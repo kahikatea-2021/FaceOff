@@ -1,13 +1,8 @@
-// const environment = process.env.NODE_ENV || 'development'
-// const config = require('./knexfile')[environment]
-// const connection = require('knex')(config)
-// const { ModuleFilenameHelpers } = require("webpack")
-
-const celebrities = require('./celebrities')
-
 function generateRandomId () {
-  console.log(celebrities.length)
-  return Math.floor(Math.random() * 1500)
+  const min = Math.ceil(1)
+  const max = Math.floor(235)
+  const x = Math.floor(Math.random() * (max - min) + min)
+  console.log(x)
 }
 
 module.exports = { generateRandomId }
