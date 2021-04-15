@@ -1,15 +1,15 @@
 {
   "name": "worldwide-routing",
   "version": "0.2.0",
-  "description": "Using React Router to navigate the globe",
-  "repository": "https://github.com/dev-academy-challenges/worldwide-routing.git",
+  "description": "Face Off App",
+  "repository": "https://github.com/kahikatea-2021/FaceOff.git",
   "main": "server/index.js",
   "scripts": {
     "start": "run-p webpack server",
     "dev": "run-p client server",
     "webpack": "webpack",
     "client": "webpack --watch",
-    "server": "node server",
+    "server": "nodemon server",
     "test": "jest --watch --noStackTrace",
     "lint": "eslint --ext .js,.jsx ."
   },
@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "nodemon": "^2.0.7",
     "superagent": "^6.1.0"
   }
 }
