@@ -7,6 +7,6 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
 
-server.use('/', celebPhotosroutes)
+server.use('/celebrities', celebPhotosroutes)
 
 module.exports = server
