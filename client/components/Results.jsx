@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import Header from './Header'
 
 function Results () {
@@ -25,6 +25,11 @@ function Results () {
               <img src="/images/giphy.gif"></img>
               <img src="/images/giphy.gif"></img>
             </div>
+          </div>
+          <div className="flex items-center">
+            <Link to="/" >
+              <button className="bg-pink-500hover:bg-pink-700 rounded-full">Return to Home</button>
+            </Link>
           </div>
         </body>
       </center>

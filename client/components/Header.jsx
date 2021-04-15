@@ -5,10 +5,8 @@ function Header () {
   return (
     <>
       <center>
-        <body className="bg-pink-300">
-          <img src="/images/face.png"></img>
-          <h1 className="text-2xl">Which celebrity do YOU look like?!</h1>
-        </body>
+        <img src="/images/face.png"></img>
+        <h1 className="text-2xl">Which celebrity do YOU look like?!</h1>
       </center>
     </>
   )
