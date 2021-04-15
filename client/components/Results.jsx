@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import Header from './Header'
 
 function Results () {
   return (
     <>
-      <Header />
       <center>
         <body className="bg-pink-300">
           <div className="grid grid-rows-3 grid-flow-col gap-5" >
