@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
-import { Route, Link } from 'react-router-dom'
-import Header from './Header'
+import { Link } from 'react-router-dom'
 import celebrities from '../../server/celebrities'
 
 function Results () {
   const [celebrityObject, setCelebrityObject] = useState()
+  const [matchingPercent, setmatchingPercent] = useState()
+
+  function generateRandomNumber () {
+    const min = Math.ceil(1)
+    const max = Math.floor(100)
+    return Math.floor(Math.random() * (max - min) + min)
+  }
 
   function generateRandomId () {
     const min = Math.ceil(1)
@@ -14,15 +20,19 @@ function Results () {
 
   function handleClick () {
     const id = generateRandomId()
+    const matchingPercent = generateRandomNumber()
     const celebrity = celebrities[id]
+    setmatchingPercent(matchingPercent)
     setCelebrityObject(celebrity)
   }
 
   return (
     <>
+
       <br></br>
       <br></br>
       <center>
+        {matchingPercent ? <h1>You look {matchingPercent}  % like:</h1> : <h1>Which celebrity do YOU look like?!</h1>}
         <body className="bg-pink-300">
           <div className="grid grid-rows-3 grid-flow-col gap-5" >
             <div className="col-span-3 row-span-3">
