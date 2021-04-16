@@ -27,7 +27,6 @@ function Results () {
           <div className="grid grid-rows-3 grid-flow-col gap-5" >
             <div className="col-span-3 row-span-3">
               <img src="/images2/giphy.gif"></img>
-              <img src="/images2/giphy.gif"></img>
             </div>
             <div className="col-span-5 row-span-3">
             </div>
@@ -39,7 +38,6 @@ function Results () {
               {celebrityObject ? <div><h1>{celebrityObject.name}</h1><img src={`https://celebritybucks.com/images/celebs/full/${celebrityObject.celebId}.jpg`} /></div> : <img src="/images/fortune.jpg" />}
             </div>
             <div className="col-span-3 row-span-3">
-              <img src="/images2/giphy.gif"></img>
               <img src="/images2/giphy.gif"></img>
             </div>
           </div>
