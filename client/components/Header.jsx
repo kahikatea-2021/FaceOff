@@ -5,7 +5,7 @@ function Header () {
   return (
     <>
       <center>
-        <img src="/images/face.png"></img>
+        <img src="/images2/face.png"></img>
         <h1 className="text-2xl">Which celebrity do YOU look like?!</h1>
       </center>
     </>
