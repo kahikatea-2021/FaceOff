@@ -270,11 +270,6 @@ module.exports = [
     name: 'Jason Sudeikis'
   },
   {
-    celebId: '1166',
-    price: 34000,
-    name: 'Bruce Lee'
-  },
-  {
     celebId: '9440',
     price: 33000,
     name: 'Christine Teigen'
@@ -355,11 +350,6 @@ module.exports = [
     name: 'Tom Hiddleston'
   },
   {
-    celebId: '5284',
-    price: 28000,
-    name: 'Lucille Ball'
-  },
-  {
     celebId: '8977',
     price: 27000,
     name: 'J.J. Abrams'
@@ -398,11 +388,6 @@ module.exports = [
     celebId: '8779',
     price: 25000,
     name: 'Bethenny Frankel'
-  },
-  {
-    celebId: '1413',
-    price: 25000,
-    name: 'Charlotte Gainsbourg'
   },
   {
     celebId: '2478',
@@ -590,11 +575,6 @@ module.exports = [
     name: 'Jimmy Kimmel'
   },
   {
-    celebId: '9580',
-    price: 15000,
-    name: ' John Oliver'
-  },
-  {
     celebId: '9404',
     price: 15000,
     name: 'Zendaya'
@@ -603,11 +583,6 @@ module.exports = [
     celebId: '1480',
     price: 15000,
     name: 'Chris Pine'
-  },
-  {
-    celebId: '4298',
-    price: 15000,
-    name: 'John Oliver'
   },
   {
     celebId: '2799',
@@ -628,11 +603,6 @@ module.exports = [
     celebId: '7610',
     price: 15000,
     name: 'Sharon Stone'
-  },
-  {
-    celebId: '3778',
-    price: 14000,
-    name: 'Jason Momoa'
   },
   {
     celebId: '2493',
@@ -750,11 +720,6 @@ module.exports = [
     name: 'Tina Turner'
   },
   {
-    celebId: '1291',
-    price: 12000,
-    name: 'Carrie-Anne Moss'
-  },
-  {
     celebId: '2637',
     price: 12000,
     name: 'Ewan McGregor'
@@ -803,11 +768,6 @@ module.exports = [
     celebId: '4716',
     price: 11000,
     name: 'Keanu Reeves'
-  },
-  {
-    celebId: '3072',
-    price: 11000,
-    name: 'Grace Kelly'
   },
   {
     celebId: '7837',

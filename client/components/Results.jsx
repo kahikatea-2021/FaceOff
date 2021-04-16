@@ -14,7 +14,7 @@ function Results () {
 
   function generateRandomId () {
     const min = Math.ceil(1)
-    const max = Math.floor(235)
+    const max = Math.floor(227)
     return Math.floor(Math.random() * (max - min) + min)
   }
 
