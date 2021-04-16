@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route } from 'react-router-dom'
+import { getCelebrityPhoto } from '../../server/functions'
 
 function Results () {
+  const [celebrityPhoto, setPhoto] = useState()
+  useEffect(() => (
+    setPhoto(getCelebrityPhoto)
+  ), [])
   return (
     <>
       <Header />
@@ -19,7 +24,7 @@ function Results () {
               <button className="bg-pink-500 hover:bg-pink-700 rounded-full">Click me!</button>
             </div>
             <div className="col-span-5 row-span-3">
-              <img src="/images/fortune.jpg"></img>
+              <img src={ celebrityPhoto }></img>
             </div>
             <div className="col-span-3 row-span-3">
               <img src="/images/giphy.gif"></img>
