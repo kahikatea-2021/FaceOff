@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Route, Link } from 'react-router-dom'
 import Header from './Header'
-import Results from './Results'
 import Dropdown from './Dropdown'
 
 
@@ -15,7 +14,6 @@ function Home() {
 
   return (
     <>
-      <Route path='/Results' component={Results} />
       <div className="grid grid-cols-3">
         <div className="col-span-3 flex flex-col items-center">
           <br></br>
