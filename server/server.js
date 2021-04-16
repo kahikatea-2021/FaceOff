@@ -1,4 +1,6 @@
+
 const path = require('path')
+
 const express = require('express')
 const celebPhotosroutes = require('./routes/celebPhotosRoutes')
 const studentRoute = require('./routes/students')

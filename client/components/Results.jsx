@@ -1,18 +1,32 @@
-import React, { useState } from 'react'
-import { Route, Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Route, Link, useParams } from 'react-router-dom'
 import Header from './Header'
 import celebrities from '../../server/celebrities'
+import request from 'superagent'
 
-function Results () {
+function Results(props) {
   const [celebrityObject, setCelebrityObject] = useState()
+  const [student, setStudent] = useState()
+  console.log(useParams())
+  let id = Number(useParams().data)
 
-  function generateRandomId () {
+  useEffect(() => {
+    request.get('/students').then(response => {
+      console.log(id)
+
+      setStudent(response.body.students.find(student => student.id === id))
+      //changeStudents(response.body.students)
+    })
+  }, [])
+
+
+  function generateRandomId() {
     const min = Math.ceil(1)
     const max = Math.floor(235)
     return Math.floor(Math.random() * (max - min) + min)
   }
 
-  function handleClick () {
+  function handleClick() {
     const id = generateRandomId()
     const celebrity = celebrities[id]
     setCelebrityObject(celebrity)
@@ -30,13 +44,14 @@ function Results () {
               <img src="/images2/giphy.gif"></img>
             </div>
             <div className="col-span-5 row-span-3">
+              {student ? <div><h1>{student.name}</h1><img className="w-72 h-96" src={student.path} /></div> : <img className="w-72 h-96" src="/images2/fortune.jpg" />}
             </div>
             <div className="col-span-3 row-span-3">
 
               <button onClick={handleClick} className="bg-pink-500 hover:bg-pink-700 rounded-full w-32 h-32">FACE OFF!</button>
             </div>
             <div className="col-span-5 row-span-3">
-              {celebrityObject ? <div><h1>{celebrityObject.name}</h1><img src={`https://celebritybucks.com/images/celebs/full/${celebrityObject.celebId}.jpg`} /></div> : <img src="/images/fortune.jpg" />}
+              {celebrityObject ? <div><h1>{celebrityObject.name}</h1><img className="w-72 h-96" src={`https://celebritybucks.com/images/celebs/full/${celebrityObject.celebId}.jpg`} /></div> : <img className="w-72 h-96" src="/images2/fortune.jpg" />}
             </div>
             <div className="col-span-3 row-span-3">
               <img src="/images2/giphy.gif"></img>
