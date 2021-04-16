@@ -55,7 +55,7 @@ function Results () {
           </div>
           <div className="">
             <Link to="/" >
-              <button className="bg-pink-500 hover:bg-pink-700 rounded-full flex items-center h-12 w-32">HOME</button>
+              <button className="bg-pink-500 hover:bg-pink-700 rounded-full h-12 w-32 text-center">HOME</button>
             </Link>
           </div>
         </body>
