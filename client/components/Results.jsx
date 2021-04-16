@@ -1,14 +1,29 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
 import { Route, Link, useParams } from 'react-router-dom'
 import Header from './Header'
+=======
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+>>>>>>> 732a180988618eee19ab94bbeb8d6a7e30998639
 import celebrities from '../../server/celebrities'
 import request from 'superagent'
 
 function Results(props) {
   const [celebrityObject, setCelebrityObject] = useState()
+<<<<<<< HEAD
   const [student, setStudent] = useState()
   console.log(useParams())
   let id = Number(useParams().data)
+=======
+  const [matchingPercent, setmatchingPercent] = useState()
+
+  function generateRandomNumber () {
+    const min = Math.ceil(1)
+    const max = Math.floor(100)
+    return Math.floor(Math.random() * (max - min) + min)
+  }
+>>>>>>> 732a180988618eee19ab94bbeb8d6a7e30998639
 
   useEffect(() => {
     request.get('/students').then(response => {
@@ -22,21 +37,25 @@ function Results(props) {
 
   function generateRandomId() {
     const min = Math.ceil(1)
-    const max = Math.floor(235)
+    const max = Math.floor(226)
     return Math.floor(Math.random() * (max - min) + min)
   }
 
   function handleClick() {
     const id = generateRandomId()
+    const matchingPercent = generateRandomNumber()
     const celebrity = celebrities[id]
+    setmatchingPercent(matchingPercent)
     setCelebrityObject(celebrity)
   }
 
   return (
     <>
+
       <br></br>
       <br></br>
       <center>
+        {matchingPercent ? <h1>You look {matchingPercent}  % like:</h1> : <h1>Which celebrity do YOU look like?!</h1>}
         <body className="bg-pink-300">
           <div className="grid grid-rows-3 grid-flow-col gap-5" >
             <div className="col-span-3 row-span-3">
@@ -60,7 +79,7 @@ function Results(props) {
           </div>
           <div className="">
             <Link to="/" >
-              <button className="bg-pink-500 hover:bg-pink-700 rounded-full flex items-center h-12 w-32">HOME</button>
+              <button className="bg-pink-500 hover:bg-pink-700 rounded-full h-12 w-32 text-center">HOME</button>
             </Link>
           </div>
         </body>
