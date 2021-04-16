@@ -950,11 +950,6 @@ module.exports = [
     name: 'Kristen Bell'
   },
   {
-    celebId: '4500',
-    price: 7000,
-    name: 'Judy Garland'
-  },
-  {
     celebId: '3927',
     price: 7000,
     name: 'Jennifer Love Hewitt'
