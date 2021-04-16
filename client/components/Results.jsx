@@ -5,6 +5,8 @@ import Header from './Header'
 function Results () {
   return (
     <>
+      <br></br>
+      <br></br>
       <center>
         <body className="bg-pink-300">
           <div className="grid grid-rows-3 grid-flow-col gap-5" >
@@ -26,9 +28,9 @@ function Results () {
               <img src="/images/giphy.gif"></img>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="">
             <Link to="/" >
-              <button className="bg-pink-500hover:bg-pink-700 rounded-full">Return to Home</button>
+              <button className="bg-pink-500 hover:bg-pink-700 rounded-full flex items-center">Return to Home</button>
             </Link>
           </div>
         </body>
